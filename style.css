@@ -108,7 +108,8 @@
 /*.............. Banner ..............*/
 
 .banner{
-  padding: 20px 0;
+  padding: 0 0;
+
 }
 
 .banner .landing {
@@ -148,12 +149,13 @@
 
 .banner .nb-image {
   background-image: url('img/handshake.jpg');
-  background-position: center center;
+  background-position: relative;
   border-radius: 50%;
   background-size: cover;
   width: 420px;
   height: 420px;
   padding-top: 0px;
+  
 }
 
 
@@ -358,14 +360,38 @@ li:hover {
 
 
 @media only screen and (max-width: 425px) {
-  .landing {
-    background-image: url('img/handshake.jpg');
+  .hand {
+    width: auto;
+    height: 700px;
+    background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/handshake.jpg);
     background-position: center center;
     background-size: cover;
-    width: 350px;
-    height: 620px;
-   
 
+  }
+
+  .hand h2{
+    color: #fff;
+  }
+
+  .jumbotron {
+    padding: 0rem 0rem !important;
+    margin-bottom: 1rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+  
+  .landing h2   {
+    color: #fff;
+    padding-top: 183px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .landing p {
+    color: #fff  !important;
+    font-weight: 400, regular;
+    font-size: 14px;
+    line-height: 21px;
+    
   }
   h1 {
     color: #fff;
@@ -380,13 +406,7 @@ li:hover {
     
   }
 
-  .header {
-    background-color: #fff;
-    background-image: url(img/handshake.jpg);
-    background-size: cover;
-    height: 500px;
-  
-  }
+
   
   .header .headerText {
     padding-top: 25%;
