@@ -513,7 +513,7 @@ li:hover {
     /*here is to make the team section scrollable */
     .member {
       overflow-x: auto;
-      max-height: 900px;
+      max-height: auto ;
       border: 2px solid #fff;
       margin-left: 20%;
     }
@@ -530,22 +530,15 @@ li:hover {
       width: 0;
   }
 
-  .member .tm-content {
+  .member .tm{
     text-align: center;
-    height: 250px;
-    min-width: 300px;
-    margin-right: -40px;
-    padding: 60px;
-    margin-left: 120px;
+    height: 550px;
+    min-width: 320px;
+    margin-right: 0px;
+    padding: 10px;
+    margin-left: 5px;
   }
-  .member .tm-img {
-    text-align: center;
-    height: 250px;
-    min-width: 300px;
-    margin-right: -40px;
-    padding: 60px;
-    margin-left: 120px;
-  }
+  
 
 
     /* the end of team */
@@ -577,7 +570,7 @@ li:hover {
     text-align: center;
     height: 110px;
     min-width: 300px;
-    margin-right: 2px;
+    margin-right: 90px;
     padding-bottom: 60px;
   }
 
