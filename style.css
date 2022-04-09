@@ -379,6 +379,19 @@ li:hover {
     background-color: #e9ecef;
     border-radius: 0.3rem;
 }
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0rem 0rem;
+}
   
   .landing h2   {
     color: #fff;
@@ -433,6 +446,7 @@ li:hover {
 
   .lk{
     padding: 0;
+    height: 20%;
     
   }
 
