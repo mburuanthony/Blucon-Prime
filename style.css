@@ -392,6 +392,8 @@ li:hover {
   justify-content: space-between;
   padding: 0rem 0rem;
 }
+
+
   
   .landing h2   {
     color: #fff;
@@ -506,10 +508,80 @@ li:hover {
   .team .tm .tm-content {
     height: auto;
   }
+ 
+
+    /*here is to make the team section scrollable */
+    .member {
+      overflow-x: auto;
+      max-height: 900px;
+      border: 2px solid #fff;
+      margin-left: 20%;
+    }
+    
+    .wrapper .row{
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: nowrap !important;
+      margin-right: -15px;
+      margin-left: -15px;
+      
+    }
+    .member::-webkit-scrollbar{
+      width: 0;
+  }
+
+  .member .tm-content {
+    text-align: center;
+    height: 250px;
+    min-width: 300px;
+    margin-right: -40px;
+    padding: 60px;
+    margin-left: 120px;
+  }
+  .member .tm-img {
+    text-align: center;
+    height: 250px;
+    min-width: 300px;
+    margin-right: -40px;
+    padding: 60px;
+    margin-left: 120px;
+  }
+
+
+    /* the end of team */
+
+  /*here is to make the partners section scrollable */
+  .partners {
+    
+    overflow-x: auto;
+    
+
+    max-height: 220px;
+    border: 1px solid #fff;
+  }
+
+  .wrap .row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap !important;
+    margin-right: -15px;
+    margin-left: -15px;
+    
+  }
+
+  .partners::-webkit-scrollbar{
+      width: 0;
+  }
 
   .partners .pr-img{
     text-align: center;
+    height: 110px;
+    min-width: 300px;
+    margin-right: 2px;
+    padding-bottom: 60px;
   }
+
+  /* the end of partners*/
 
   .trainingImg {
     background-image: url(img/training.png);
