@@ -276,7 +276,7 @@
 }
 
 .team .tm .tm-content{
-  height: 175vh;
+  height: 190vh;
   padding: 90px 10px 10px 10px;
   margin-top: -80px;
   text-align: center;
@@ -460,7 +460,7 @@ li:hover {
   }
 
   .services .card {
-    height: 60vh;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -470,7 +470,7 @@ li:hover {
   }
 
   .team .tm .tm-content {
-    height: 150vh;
+    height: auto;
   }
 
   .partners .pr-img{
