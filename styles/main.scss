@@ -1,0 +1,29 @@
+@import "./nav";
+@import "./banner";
+@import "./about";
+@import "./mission";
+@import "./services";
+@import "./team";
+@import "./partners";
+@import "./training";
+@import "./footer";
+@import "./mediaQuery";
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

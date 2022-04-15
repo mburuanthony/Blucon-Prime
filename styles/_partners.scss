@@ -1,0 +1,32 @@
+#partners {
+  padding: 1rem;
+
+  .head {
+    hr {
+      border-width: 2px;
+    }
+
+    h3 {
+      width: fit-content;
+      padding: 0 0.5rem;
+      margin: -1.75rem auto 0.5rem auto;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: $white;
+    }
+  }
+
+  .partners_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    gap: 2rem;
+
+    & > div {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

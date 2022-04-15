@@ -1,0 +1,69 @@
+@import "./colors";
+
+#about {
+  .container {
+    #row1 {
+      .head {
+        margin: 2rem 0 1rem 0;
+
+        hr {
+          border-width: 2px;
+        }
+
+        h3 {
+          width: fit-content;
+          padding: 0 4px;
+          margin: -1.75rem auto 0.5rem auto;
+          font-size: 18px;
+          font-weight: 600;
+          background-color: $white;
+        }
+
+        h4 {
+          margin: 0 0 1rem 0;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .abt-image {
+      width: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+
+    .us {
+      padding-top: 5px;
+
+      p {
+        margin: 0 0 2rem 0;
+        color: $textColor;
+      }
+    }
+  }
+
+  .location {
+    margin: -1rem 0 1rem 0;
+
+    p {
+      margin: 0 0 0.5rem 0;
+      padding: 0 0 0 1rem;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $darkBlue;
+    }
+
+    img {
+      display: block;
+      width: 16rem;
+      margin: 0 auto 0 auto;
+    }
+  }
+}

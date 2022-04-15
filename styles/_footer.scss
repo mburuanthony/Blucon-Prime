@@ -1,0 +1,103 @@
+@import "./colors";
+
+#contact {
+  margin: 2rem 0 0 0;
+  padding: 1rem 0;
+  background-color: $darkBlue;
+  color: $white;
+
+  .head {
+    margin: 1rem 0 0 0;
+    padding: 0 1rem;
+
+    hr {
+      border-width: 2px;
+      background-color: $lighBlue;
+    }
+
+    h3 {
+      width: fit-content;
+      padding: 0 8px;
+      margin: -1.75rem auto 0.5rem auto;
+      font-size: 18px;
+      font-weight: 500;
+      background-color: $darkBlue;
+    }
+  }
+
+  .tel_container {
+    margin: 1rem 0 0 0;
+
+    .tel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+      }
+
+      .mail {
+        color: $white;
+      }
+
+      .phone {
+        padding: 0.5rem 2rem;
+        margin: 1rem 0;
+        background-color: $white;
+        color: $darkBlue;
+        font-weight: 600;
+      }
+
+      p {
+        font-weight: normal;
+
+        i {
+          margin: 0 0.5rem 0 0;
+        }
+      }
+    }
+  }
+
+  ._copy {
+    #logo_footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: fit-content;
+      margin: 0 auto;
+
+      img {
+        width: 7.5rem;
+        height: 7.5rem;
+        margin: 0 4px 0 0;
+      }
+
+      p {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+
+        & :nth-child(1) {
+          text-transform: capitalize;
+          font-size: 24px;
+          color: $lighBlue;
+        }
+
+        & :nth-child(2) {
+          color: $white;
+        }
+      }
+    }
+
+    .copy {
+      text-align: center;
+    }
+  }
+}

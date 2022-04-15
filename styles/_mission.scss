@@ -1,0 +1,22 @@
+@import "./colors";
+
+.mission {
+  margin: 1rem 0;
+  padding: 1.25rem 1rem 0.25rem 1rem;
+  background: $lighBlue;
+
+  hr {
+    background-color: $white;
+  }
+
+  & > div {
+    h5 {
+      font-size: 18px;
+      color: $white;
+    }
+
+    p {
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,318 @@
+@import "./colors";
+
+@media only screen and (min-width: 768px) {
+  nav {
+    background-image: none;
+
+    #logo_navbar {
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  #banner {
+    background-image: none;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .jumbotron {
+      #container {
+        #text {
+          .landing {
+            h2,
+            p {
+              color: $black;
+            }
+          }
+
+          #buttons {
+            & :nth-child(2) {
+              background: $white;
+              color: $lighBlue;
+              border-color: $lighBlue;
+            }
+          }
+        }
+      }
+    }
+
+    .nb-image {
+      display: block;
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+    }
+  }
+
+  #about {
+    .container {
+      #row1 {
+        .head {
+          h3 {
+            margin: -1.75rem 0 0.5rem 1rem;
+          }
+
+          h4 {
+            font-size: 1.25rem;
+            font-weight: bolder;
+          }
+        }
+      }
+
+      #abt {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+
+        .abt-image {
+          min-width: 40vw;
+
+          .us {
+            margin: 0 0 0 1rem;
+          }
+        }
+      }
+    }
+
+    .location {
+      margin: 2rem 0 0 0;
+
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+
+  .mission {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+
+    hr {
+      width: 10rem;
+      transform: rotate(90deg);
+    }
+
+    & > div {
+      width: 50%;
+    }
+  }
+
+  #services {
+    .head {
+      h3 {
+        margin: -1.75rem 0 0.5rem 1rem;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      & > div {
+        width: 16.25rem;
+        height: 24rem;
+        padding: 0.5rem;
+
+        img {
+          margin: 0.5rem 0;
+        }
+
+        h5 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 14px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  #team {
+    .head {
+      h3 {
+        margin: -1.75rem 0 0.5rem 1rem;
+      }
+    }
+  }
+
+  #partners {
+    .head {
+      h3 {
+        margin: -1.75rem 0 0.5rem 1rem;
+      }
+    }
+
+    .partners_wrapper {
+      justify-content: flex-start;
+    }
+  }
+
+  #training {
+    display: flex;
+    flex-direction: row;
+
+    & :nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p {
+        text-align: left;
+      }
+    }
+
+    img {
+      width: 50%;
+    }
+  }
+
+  #contact {
+    .head {
+      h3 {
+        margin: -1.75rem 0 0.5rem 1rem;
+      }
+    }
+
+    .tel_container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .tel {
+        align-items: flex-start;
+      }
+
+      ._copy {
+        #logo_footer {
+          flex-direction: row;
+          align-items: flex-start;
+
+          p {
+            align-items: flex-start;
+            margin: 0 0 0 0 1rem;
+          }
+        }
+      }
+
+      .copy {
+        margin: 1.25rem 0 0 0;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav,
+  #about,
+  #team,
+  #partners,
+  #training {
+    margin: 0 5rem;
+  }
+
+  #banner {
+    .jumbotron {
+      margin: 0 5rem;
+    }
+
+    .nb-image {
+      margin: 0 5rem 0 0;
+    }
+  }
+
+  #services {
+    margin: 3rem 5rem 0 5rem;
+  }
+
+  #team {
+    .team_wrapper {
+      & > div {
+        min-width: 16.25rem;
+      }
+    }
+  }
+
+  #training {
+    & :nth-child(1) {
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    img {
+      width: 40%;
+    }
+  }
+
+  #contact {
+    .head,
+    .tel_container {
+      margin: 0 5rem;
+    }
+
+    .tel {
+      .phone {
+        padding: 0.25rem 2.5rem;
+      }
+    }
+
+    .tel_container {
+      justify-content: flex-start;
+
+      .tel {
+        font-size: 14px;
+      }
+
+      ._copy {
+        margin: 0 0 0 6rem;
+
+        #logo_footer {
+          p {
+            & :nth-child(1) {
+              font-weight: 600;
+              font-size: 1.25rem;
+            }
+
+            & :nth-child(2) {
+              font-size: 12px;
+            }
+          }
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

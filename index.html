@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <title>Blucon Consulting LTD</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
@@ -24,414 +24,323 @@
     <link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
     <link rel="manifest" href="Favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
     
-      <section class="lk">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <nav class="navbar navbar-expand-lg  ">
-                <a class="navbar-brand logo" href="#"><img src="img/picture1.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"> <i style="font-size:34px" class="fa">&#xf0c9;</i></span>
-                </button>
+      
+      <nav class="navbar navbar-expand-md navbar-light bg-faded">
+        <a class="navbar-brand logo" id="logo_navbar" href="#">
+          <img src="img/picture1.png">
+          <p>
+            <span>Blucon</span>
+            <span>consulting ltd</span>
+          </p>
+        </a>
+        <button 
+          class="navbar-toggler" 
+          type="button"
+          data-toggle="collapse" 
+          data-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <i class="fa">&#xf0c9;</i>
+        </button>
         
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#partners">Partners</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>      
-            </div>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partners">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </section>
+      </nav>      
+         
+      <section id="banner">
+        <div class="jumbotron">
+          <div id="container">
+            <div class="row">
+              <div id="text">             
+                <div class="landing">
+                  <h2>Sustainable Business Transformation</h2>
+                  <p>We are a business consultancy firm based at the heart of the Coast of Kenya, with a focus on the Blue Economy</p>
 
-
-    
-
-
-
-
-          </div>
-      </div>
-
-      <section class="banner ">
-         <div class="jumbotron jumbotron-fluid " style="background-color: white;">
-        <div class="container hand">
-          <div class="row">
-            <div class="col-md-6 order-2">
-              <div class="nb-image hidden">
-
-              </div>
-            </div>
-
-            <div class="col-md-6">
-             
-                <div class="container landing">
-                  
-                      <h2>Sustainable Business Transformation </h2>
-                              
-                              <p>We are a business consultancy firm based at the heart of the Coast of Kenya, with a focus on the Blue Economy</p>
-              
-                    
-                </div>
+                  <div id="buttons">
+                    <a href="tel:0726 701452">contact us</a>
+                    <a href="#services">explore</a>
+                  </div>
+                </div>      
               </div>
             </div>
           </div>
         </div>
+        
+          <img src="./img/handshake.jpg" alt="..." class="nb-image">
       </section>
 
       <section class="about" id="about">
         <div class="container">
-          <div class="row">
-            <div class="col-md-10 head">
-              <h3>ABOUT US</h3>
-              <br>
-
-              <h4 style="text-align: center;">We pivot your business to the next level</h4>
-              
-            </div>
+          <div  id="row1" >
+              <div class="head">
+                <hr>
+                <h3>ABOUT US</h3>
+                <h4>We pivot your business to the next level</h4>
+              </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-6">
-              <div class="abt-image">
+          <div id="abt" >
+            <div class="abt-image">
                 <img src="img/diamonds.jpg">
-              </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="us">
-                
-                
-                <p>Blucon Consulting Ltd is a Pan-African advisory and management consulting firm that provides solutions in the fields of Project Management, Strategy, Research, Marketing and business sustainability solutions.</p>
-
+            <div class="us">
                 <p>
-                  Blucon Consulting prides itself in understanding the rigors of entrepreneurship.  We have built invaluable expertise in maneuvering business undertakings from idea stages to actualization.  In the Coast region particularly, we have pivoted to become the premier referral partner for entrepreneurial penetration into existing industries. With numerous opportunities in the Blue Economy, Special Economic Zones, Shipping, Agriculture and Manufacturing, BluCon Consulting offers to walk with you from process conceptualization, to the technicalities of licensing, registration, capital planning and eventual business set-up. We believe in collaborative partnerships that offers professional foresighted execution across all stages of business.   
+                  Blucon Consulting Ltd is a Pan-African advisory and management consulting firm 
+                  that provides solutions in the fields of Project Management, Strategy, Research, Marketing 
+                  and business sustainability solutions.
                 </p>
-                <p>We don't believe in a one-size-fits-all approach to Consultancy. Our aim is to transform businesses from th inside, through offering cutting edge client specific solutions. We draw insight from client data, building flexible, future-oriented and resilient businesses </p>
-              </div>
-            <div>
+                <p>
+                  Blucon Consulting prides itself in understanding the rigors of entrepreneurship.  We have built invaluable expertise in maneuvering business undertakings from idea stages
+                  to actualization. 
+                  In the Coast region particularly, we have pivoted to become the premier referral partner for entrepreneurial penetration into existing industries. 
+                  With numerous opportunities in the Blue Economy, Special Economic Zones, Shipping, Agriculture and Manufacturing, BluCon Consulting offers to walk with you
+                  from process conceptualization, to the technicalities of licensing, registration, capital planning and eventual business set-up. We believe in 
+                  collaborative partnerships that offers professional foresighted execution across all stages of business.
+                </p>
+                <p>
+                  We don't believe in a one-size-fits-all approach to Consultancy. Our aim is to transform businesses from th inside, 
+                  through offering cutting edge client specific solutions. We draw insight from client data,
+                  building flexible, future-oriented and resilient businesses
+                </p>
+            </div>     
           </div>
+        </div>
+
+        <div class="location"> 
+          <p>We are located at . . .</p>
+          <img src="img/location.png" alt=""> 
         </div>
       </section>
-      <div class="section">
-        <div class="container location" style="text-align: center;"> 
-          <h3>We are located at</h3>
-          <br>
           
-              <img src="img/location.png" alt="">
-          
-            <br>
-              
-           
+      <section class="mission">    
+        <div>
+          <h5>VISION</h5>
+          <p>To be recognized as an impactful, innovative and efficient Mangement Consulting partner</p>
         </div>
-      </div>
 
-      <section class="mission">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-5">
-              <div class="ms">
-                <h5>VISION</h5>
-                <p>To be recognized as an impactful, innovative and efficient Mangement Consulting partner</p>
-                
-              </div>
-            </div>
-
-            <div class="col-md-1">
-              <div class="vertical"></div>
-            </div>
-
-            <div class="col-md-5">
-              <div class="us">
-                <h5>MISSION</h5>
-                <p>To understand the clients' unique needs and carve out innovative and comprehensive solutions through professional consulting services</p>
-               
-              </div>
-            <div>
-          </div>
-        </div>
+        <hr>
+        
+        <div>
+          <h5>MISSION</h5>
+          <p>
+            To understand the clients' unique needs and carve out innovative and comprehensive 
+            solutions through professional consulting services
+          </p>
+        <div>
       </section>
 
-      <section class="services" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 head">
-              <h3>OUR SERVICES</h3>
-            </div>
-          </div>
+      <section id="services">
+              <div class="head">
+                <hr>
+                <h3>OUR SERVICES</h3>
+              </div>
 
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
+              <div class="content">
+                <div>
                   <img src="img/propasal.png" alt="">
-                <h5>Propasal Writing and<br> execution</h5>
-                <p>We shape your proposal document with the utmost attention and focus, leveraging on our project design competencies to put in words that would influence your chances to secure funding as well as offer technical assistance during execution.</p>
-                 
-                  
+                  <h5>Propasal Writing and<br> execution</h5>
+                  <p>
+                    We shape your proposal document with the utmost attention and focus, leveraging on our project design competencies to put in 
+                    words that would influence your chances to secure funding as well as offer technical assistance during execution.
+                  </p>
                 </div>
-              </div>
-              
-            </div>
 
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
+                <div>
                   <img src="img/strategy.png" alt="">
-                <h5>Strategy and<br> Advisory</h5>
-                <p>We believe that a well-planned strategy is the key to success for any organization and the source of its competitive advantage</p>                 
-                  
+                  <h5>Strategy and<br> Advisory</h5>
+                  <p>
+                    We believe that a well-planned strategy 
+                    is the key to success for any organization and the source of its competitive advantage
+                  </p>                   
                 </div>
-              </div>
-              
-            </div>
-
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
+                
+                <div >
                   <img src="img/advertising.png" alt="">
-                <h5>Advertising</h5>
-                <p>We work with SMEs and growing businesses and organizations to develop and implement effective and impactful marketing strategies that allow businesses to grow and achieve their targets</p>
-                  
-                </div>
-              </div>
-             
-            </div>
-          </div>
+                  <h5>Advertising</h5>
+                  <p>
+                    We work with SMEs and growing businesses and organizations to 
+                    develop and implement effective and impactful marketing strategies that allow businesses to grow and achieve their targets
+                  </p>
+                </div>              
 
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
+                <div>
                   <img src="img/sustainability.jpg" alt="" style="width: 50%; height: 25%;">
-                  <h5>Sustainability<br> Solutions</h5>
+                  <h5>Sustainability<br>Solutions</h5>
                   <p>We collaborate with our clients to seizing opportunities in the green and blue economy to achieve societal impact and economical longevity beyond funding cycles with minimal environmental footprint</p>
                 </div>
-              </div>
-              
-            </div>
-
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
+                            
+                <div>
                   <img src="img/research.jpg" alt="" style="width: 50%; height: 22%;" >
-                <h5>Monitoring and<br> Evaluation</h5>
-                <p>We offer a wide range of Monitoring and evaluation consultancy services including project design and setting up M&E systems, conducting needs assessments and baseline studies, project evaluations (mid-term, end term, and impact evaluations). In addition, we offer training services in M&E</p>
+                  <h5>Monitoring and<br> Evaluation</h5>
+                  <p>
+                    We offer a wide range of Monitoring and evaluation consultancy services including project design and setting up M&E 
+                    systems, conducting needs assessments and baseline studies, 
+                    project evaluations (mid-term, end term, and impact evaluations). In addition, we offer training services in M&E
+                  </p>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
+                
+                <div>
                   <i class="fa-solid fa-chart-line"></i>
                   <h5>Research</h5>
                   <p>We offer customized quality research solutions that include market and industry analysis, institutional surveys, needs assessments, project evaluations, strategy and business intelligence research. </p>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
+                          
+                <div>
                   <img src="img/feasibility.png" alt="" style="width: 40%;">
-                <h5>Feasibility Studies</h5>
-                <p>We have proven experience in undertaking feasibility studies for businesses and projects to determine the viability of the proposed ideas before proceeding with the investment. We believe that a well-grounded feasibility of any venture is the key to unlocking business potential and investment. </p>
-                 
+                  <h5>Feasibility Studies</h5>
+                  <p>
+                    We have proven experience in undertaking feasibility studies for businesses and projects to determine the viability 
+                    of the proposed ideas before proceeding with the investment. We believe 
+                    that a well-grounded feasibility of any venture is the key to unlocking business potential and investment. 
+                  </p>
+                </div>
+              </div>
+      </section>
+
+      <section id="team">
+                  <div class="head">
+                    <hr>
+                    <h3>OUR TEAM</h3>
+                  </div>
+
+                  <div class="team_wrapper">
+                    <div>
+                      <div id="img">
+                        <img src="img/derrick.jpeg">
+                      </div>
+                      <h5>Derrick Amani</h5>
+                      <h6>PROJECT MANAGEMENT AND SUSTAINABILITY LEAD</h6>
+                      <P>
+                        An analyst with a passion for developing new ideas and strategies that transform companies to thrive in rapidly changing markets with evolving demands. Derrick thrives in complex businesses
+                        situations, finding and articulating challenges 
+                        and incorporating a multi-disciplinary approach to integrate business strategy, research and data analytics to come up with solutions.
+                        A consultant with a bias for action. I believe in full cycle project management with a collaborative approach to working with clients. Through exciting brainstorming sessions, 
+                        I aim to understand client goals and areas for development. I believe in exchanging ideas with 
+                        the project owner, re-engineering business processes to tangible results whilst creating opportunities for pivoting into uncharted waters.
+                        A champion of sustainability, Derrick brings on board specialty in Sustainable Urban Economic Development, B2B project/partnership management, 
+                        with a breadth of experience in data analytics, and an academic background in Economics & Statistics,
+                        Project Management, Monitoring and Evaluation, with a Masters in Sustainable Urban Development. 
+                      </P>
+                    </div>
                   
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="team">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 head">
-              <h3>OUR TEAM</h3>
-            </div>
-          </div>
-
-
-          <div class="wrapper">
-            <div class="row justify-content-left member">
-              <div class="col-md-4">
-                <div class="tm">
-                  <div class="tm-img">
-                    <img src="img/derrick.jpeg">
-                  </div>
-                  <div class="tm-content">
-                    <h5>Derrick Amani</h5>
-                    <h6>PROJECT MANAGEMENT AND SUSTAINABILITY LEAD</h6>
-                    <P>An analyst with a passion for developing new ideas and strategies that transform companies to thrive in rapidly changing markets with evolving demands. Derrick thrives in complex businesses situations, finding and articulating challenges and incorporating a multi-disciplinary approach to integrate business strategy, research and data analytics to come up with solutions.
-  
-                      A consultant with a bias for action. I believe in full cycle project management with a collaborative approach to working with clients. Through exciting brainstorming sessions, I aim to understand client goals and areas for development. I believe in exchanging ideas with the project owner, re-engineering business processes to tangible results whilst creating opportunities for pivoting into uncharted waters.
-                      
-                      A champion of sustainability, Derrick brings on board specialty in Sustainable Urban Economic Development, B2B project/partnership management, with a breadth of experience in data analytics, and an academic background in Economics & Statistics, Project Management, Monitoring and Evaluation, with a Masters in Sustainable Urban Development. 
-                       </P>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-md-4">
-                <div class="tm">
-                  <div class="tm-img">
-                    <img src="img/rita.jpeg">
-                  </div>
-                  <div class="tm-content">
-                    <h5>Rita Wahiti</h5>
-                    <h6>BUSINESS DEVELOPMENT AND<br> MARKETING</h6>
-                    <p>An enthused professional, Ms. Wahiti has unparalleled experience as a regional marketer having worked with Tanzania, Rwanda, South Sudan and Ethiopia markets in addition to the local Kenyan market. She has diversified her skills in business development, client management and marketing strategy. Her utility of data analytics and social media management to dissect the existing business environment, has enabled her to build a repertoire for evolutionary product development and foresight into emerging markets, with precision strategy through Above the Line (ATL) and Below the Line (BTL) advertising. 
-  Beyond her academic experience her instinctive ‘needs before demand’ approach and her ardent devotion to her client’s satisfaction sharpened her tactical customer acquisition skills, top service offering in brand management and resolute customer loyalty.</p>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-md-4">
-                <div class="tm">
-                  <div class="tm-img">
-                    <img src="img/sikuku.jpeg">
-                  </div>
-                  <div class="tm-content">
-                    <h5>Brian Sikuku</h5>
-                    <h6>STRATEGY AND M&E LEAD</h6>
-                    <p>Mr. Sikuku brings on board over 7 years of business consulting experience to the firm, having helped large and medium-sized companies improve business and operational performance. His core skills are in the fields of Strategy & Business Planning and Research. In addition, he has been involved in setting up monitoring and Evaluation frameworks for a number of organizations in the public and NGO sectors.
-                      His academic background is in the field of Economics and Project Management. In addition, Mr. Sikuku is a Certified Public Accountant (CPA-K) and holds professional certification in Monitoring and Evaluation. 
+                    <div>
+                      <div id="img">
+                        <img src="img/rita.jpeg">
+                      </div>
+                      <h5>Rita Wahiti</h5>
+                      <h6>BUSINESS DEVELOPMENT AND<br> MARKETING</h6>
+                      <p>
+                        An enthused professional, Ms. Wahiti has unparalleled experience as a regional marketer having worked with Tanzania, Rwanda, South Sudan and Ethiopia markets in addition to the local Kenyan market. She has diversified her skills in business development, client management and marketing strategy. Her utility of data analytics and social media management to dissect the existing business environment, has enabled her to build a repertoire for evolutionary product development and foresight into emerging markets, with precision strategy through Above the Line (ATL) and Below the Line (BTL) advertising. 
+                        Beyond her academic experience her instinctive ‘needs before demand’ approach and her ardent devotion to her client’s satisfaction sharpened her tactical customer acquisition skills, top service offering in brand management and resolute customer loyalty.
                       </p>
+                    </div>
+                
+                    <div>
+                      <div id="img">
+                        <img src="img/sikuku.jpeg">
+                      </div>
+                      <h5>Brian Sikuku</h5>
+                      <h6>STRATEGY AND M&E LEAD</h6>
+                      <p>
+                        Mr. Sikuku brings on board over 7 years of business consulting experience to the firm, having helped large and medium-sized companies improve business and operational performance. His core skills are in the fields of Strategy & Business Planning and Research. In addition, he has been involved in setting up monitoring and Evaluation frameworks for a number of organizations in the public and NGO sectors.
+                        His academic background is in the field of Economics and Project Management. In addition, Mr. Sikuku is a Certified Public Accountant (CPA-K) and holds professional certification in Monitoring and Evaluation. 
+                      </p>
+                    </div>
+                
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
       </section>
 
-      <section class="" id="partners">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 head">
+      <section id="partners">
+            <div class="head">
+              <hr>
               <h3>OUR PARTNERS</h3>
             </div>
-          </div>
-
-         <div class="wrap">
-          <div class="row partners">
-            <div class="col-md-4 pr-img">
-              <img class="img1" src="img/goblue.png">
-            </div>
-
-            <div class="col-md-4 pr-img">
-              <img class="img2" src="img/swahilipot.png">
-            </div>
-
-            <div class="col-md-4 pr-img">
-              <img class="img2" src="img/jumuiyayakauntizapwani.png">
-            </div>
-          </div>
-         </div>
-        </div>
-      </section>
-
-      <!--Training-->
-      <section class="team">
-        <div class="container">
-          <div class="row">
-            
-              <h3 style="color: black; color: #000;
-              text-align: center;
-              font-size: 25px;
-              font-weight: bold;
-              
-              position: relative;padding-top: 50px;">TRAINING AND CAPACITY BUILDING</h3>
-           
-          </div>
-        </section>
-
-      <section class="training">
-        <div class="container">
-          
-             
-              <p>We customize our training to meet the client’s unique needs. We offer specialized training in the following areas: </p>
-
-              <br>
-
-            <div class="trainingImg">
-
-            </div>
-           
-
-      </section>
-
-
-      <BR></BR>
-      <BR>
-      
-
-      <section class="footer" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 head">
-              <h3 style="color: #fff;">CONTACT US</h3>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6 dt">
-              <p><i class="fa-solid fa-phone"></i> 0726 701452, 0715 637857, 0777 100883</p>
-              <p><i class="fa-solid fa-envelope"></i>bluconkenya@gmail.com</p>
-              <p><i class="fa-solid fa-location-dot"></i>Links Rd, Mombasa</p>
-                 
-              <a href="tel:0726 701452">Hire Us</a>
-            
-            </div>
-
-            <div class="col-md-6">
-              <div class="ft-img">
-                <img src="img/picture1.png">
-                <p class="copy">Copyright &copy;2022</p>
+        
+            <div class="partners_wrapper">
+              <div>
+                <img class="img1" src="img/goblue.png">
               </div>
+
+              <div>
+                <img class="img2" src="img/swahilipot.png">
+              </div>
+
+              <div>
+                <img class="img2" src="img/jumuiyayakauntizapwani.png">
+              </div>
+            </div>        
+      </section>
+
+      <section id="training"> 
+        <div>
+          <h3>TRAINING AND CAPACITY BUILDING</h3>
+          <p>We customize our training to meet the client’s unique needs. We offer specialized training in the following areas: </p>
+        </div>           
+        <img src="img/training.png" alt="">
+      </section>
+
+      <section id="contact">
+        <div class="head">
+          <hr>
+          <h3 style="color: #fff; font-size: 1.25rem;">CONTACT US</h3>
+        </div>
+
+        <div class="tel_container">
+          <div class="tel">
+            <p><i class="fa-solid fa-phone"></i> 0726 701452, 0715 637857, 0777 100883</p>
+            <p><i class="fa-solid fa-envelope"></i> 
+              <a href="mailto:bluconkenya@gmail.com" class="mail">bluconkenya@gmail.com</a>
+            </p>
+            <p><i class="fa-solid fa-location-dot"></i>Links Rd, Mombasa</p>                 
+            <a href="tel:0726 701452" class="phone" >Hire Us</a>            
+          </div>
+
+          <div class="_copy">
+            <div id="logo_footer">
+              <img src="img/picture1.png">
+              <p>
+                <span id="company">Blucon</span>
+                <span id="ltd">consulting ltd</span>
+              </p>
             </div>
+
+            <p class="copy">Copyright &copy;<span id="year"></span></p>
           </div>
         </div>
       </section>
     
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7e124cec09.js" crossorigin="anonymous"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-    -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+    <script>
+      document.querySelector('#year').textContent = new Date().getUTCFullYear();
+    </script>
   </body>
 </html>
