@@ -151,7 +151,6 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 #about .container #row1 .head h4 {
-  margin: 0 0 1rem 0;
   font-size: 16px;
   font-weight: 600;
 }
@@ -167,17 +166,13 @@ nav .navbar-nav .nav-item .nav-link {
   margin: 0 0 10px 0;
 }
 
-#about .container .us {
-  padding-top: 5px;
-}
-
 #about .container .us p {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   color: #8c8c8c;
 }
 
 #about .location {
-  margin: -1rem 0 1rem 0;
+  margin: 0.5rem 0 1rem 0;
 }
 
 #about .location p {
@@ -569,21 +564,36 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 @media only screen and (min-width: 768px) {
+  #about,
+  #services,
+  #team,
+  #partners,
+  #training {
+    padding: 0.5rem 4rem;
+  }
   nav {
     background-image: none;
+    margin: 0 3.5rem;
   }
   nav #logo_navbar img {
     width: 4rem;
     height: 4rem;
+  }
+  nav .navbar-nav {
+    background-color: #ffffff;
   }
   nav .navbar-nav .nav-item .nav-link {
     color: #000000;
   }
   #banner {
     background-image: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    margin: 0 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -617,7 +627,7 @@ nav .navbar-nav .nav-item .nav-link {
     border-radius: 50%;
   }
   #about .container #row1 .head {
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
   }
   #about .container #row1 .head h3 {
     margin: -1.75rem 0 1rem 1rem;
@@ -636,12 +646,8 @@ nav .navbar-nav .nav-item .nav-link {
             flex-direction: row;
     gap: 0.5rem;
   }
-  #about .container #abt .abt-image {
-    min-width: 40vw;
-    min-height: 40vh;
-  }
   #about .container #abt .abt-image img {
-    width: 100%;
+    width: 14em;
   }
   #about .container #abt .us {
     display: -webkit-box;
@@ -654,7 +660,7 @@ nav .navbar-nav .nav-item .nav-link {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 1rem;
+    gap: 0.25rem;
   }
   #about .container #abt .us p {
     margin: 0;
@@ -681,7 +687,12 @@ nav .navbar-nav .nav-item .nav-link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 2rem 1rem;
+  }
+  .mission ._vision {
+    margin: 0 0 0 4rem;
+  }
+  .mission ._mision {
+    margin: 0 4rem 0 0;
   }
   .mission hr {
     width: 10rem;
@@ -701,13 +712,11 @@ nav .navbar-nav .nav-item .nav-link {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 2rem;
+    padding: 0 0 0 3rem;
   }
   #services .content > div {
     width: 16.25rem;
@@ -762,6 +771,9 @@ nav .navbar-nav .nav-item .nav-link {
   #training img {
     width: 50%;
   }
+  #contact .head {
+    margin: 0 3rem;
+  }
   #contact .head h3 {
     margin: -1.75rem 0 0.5rem 1rem;
   }
@@ -776,9 +788,10 @@ nav .navbar-nav .nav-item .nav-link {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 4rem;
   }
   #contact .tel_container .tel {
     -webkit-box-align: start;
@@ -825,7 +838,7 @@ nav .navbar-nav .nav-item .nav-link {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 14rem;
-    gap: 4rem;
+    gap: 10rem;
   }
   #banner .jumbotron #container #text #buttons :nth-child(2) {
     -webkit-transition: all ease 0.25s;
@@ -847,6 +860,9 @@ nav .navbar-nav .nav-item .nav-link {
   #about .container #abt .abt-image {
     min-width: 20vw;
   }
+  #about .container #abt .abt-image img {
+    min-width: 100%;
+  }
   #services .content {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -854,6 +870,7 @@ nav .navbar-nav .nav-item .nav-link {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding: 0;
   }
   #training :nth-child(1) h3 {
     font-size: 18px;
@@ -862,10 +879,10 @@ nav .navbar-nav .nav-item .nav-link {
     width: 40%;
   }
   #contact .tel_container {
-    margin: 0 11rem;
+    margin: 0 14rem;
   }
   #contact .head {
-    margin: 0 10rem;
+    margin: 0 13rem;
   }
   #contact .tel .phone {
     padding: 0.25rem 2.5rem;
