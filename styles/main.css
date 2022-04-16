@@ -750,10 +750,13 @@ nav .navbar-nav .nav-item .nav-link {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
     padding: 0 0 0 3rem;
   }
   #services .content > div {
@@ -973,11 +976,6 @@ nav .navbar-nav .nav-item .nav-link {
   }
   .mission {
     padding: 1rem 6.5rem;
-  }
-  #services .content {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   #contact .tel_container {
     padding: 0 6rem;

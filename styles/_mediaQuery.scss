@@ -157,8 +157,9 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      align-items: flex-start;
-      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
       padding: 0 0 0 3rem;
 
       & > div {
@@ -432,12 +433,6 @@
 
   .mission {
     padding: 1rem 6.5rem;
-  }
-
-  #services {
-    .content {
-      justify-content: space-between;
-    }
   }
 
   #contact {
