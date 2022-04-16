@@ -66,9 +66,14 @@ nav .navbar-nav {
 }
 
 nav .navbar-nav .nav-item .nav-link {
-  color: #000000;
   text-align: center;
   font-size: 16px;
+  font-weight: bolder;
+  color: #000000;
+}
+
+#topheader .navbar-nav li.active > a {
+  color: #199bf1;
 }
 
 #banner {

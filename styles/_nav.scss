@@ -55,10 +55,15 @@ nav {
 
     .nav-item {
       .nav-link {
-        color: $black;
         text-align: center;
         font-size: 16px;
+        font-weight: bolder;
+        color: $black;
       }
     }
   }
+}
+
+#topheader .navbar-nav li.active > a {
+  color: $lighBlue;
 }
