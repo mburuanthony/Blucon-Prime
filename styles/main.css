@@ -131,15 +131,19 @@ nav .navbar-nav .nav-item .nav-link {
   display: none;
 }
 
-#about .container #row1 .head {
+#about #container {
+  padding: 0 1rem;
+}
+
+#about #container #row1 .head {
   margin: 2rem 0 1rem 0;
 }
 
-#about .container #row1 .head hr {
+#about #container #row1 .head hr {
   border-width: 2px;
 }
 
-#about .container #row1 .head h3 {
+#about #container #row1 .head h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -150,23 +154,23 @@ nav .navbar-nav .nav-item .nav-link {
   background-color: #ffffff;
 }
 
-#about .container #row1 .head h4 {
+#about #container #row1 .head h4 {
   font-size: 16px;
   font-weight: 600;
 }
 
-#about .container .abt-image {
+#about #container .abt-image {
   width: 100%;
 }
 
-#about .container .abt-image img {
+#about #container .abt-image img {
   display: block;
   width: 100%;
   height: 100%;
   margin: 0 0 10px 0;
 }
 
-#about .container .us p {
+#about #container .us p {
   margin: 0 0 1rem 0;
   color: #8c8c8c;
 }
@@ -660,17 +664,17 @@ nav .navbar-nav .nav-item .nav-link {
     height: 16rem;
     border-radius: 50%;
   }
-  #about .container #row1 .head {
+  #about #container #row1 .head {
     margin: 0 0 1rem 0;
   }
-  #about .container #row1 .head h3 {
+  #about #container #row1 .head h3 {
     margin: -1.75rem 0 1rem 1rem;
   }
-  #about .container #row1 .head h4 {
+  #about #container #row1 .head h4 {
     font-size: 1.25rem;
     font-weight: bolder;
   }
-  #about .container #abt {
+  #about #container #abt {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -680,10 +684,10 @@ nav .navbar-nav .nav-item .nav-link {
             flex-direction: row;
     gap: 0.5rem;
   }
-  #about .container #abt .abt-image img {
+  #about #container #abt .abt-image img {
     width: 13em;
   }
-  #about .container #abt .us {
+  #about #container #abt .us {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -696,7 +700,7 @@ nav .navbar-nav .nav-item .nav-link {
             justify-content: space-between;
     gap: 0.25rem;
   }
-  #about .container #abt .us p {
+  #about #container #abt .us p {
     margin: 0;
   }
   #about .location {
@@ -892,13 +896,13 @@ nav .navbar-nav .nav-item .nav-link {
     width: 18rem;
     height: 18rem;
   }
-  #about .container #abt {
+  #about #container #abt {
     gap: 1rem;
   }
-  #about .container #abt .abt-image {
+  #about #container #abt .abt-image {
     min-width: 20vw;
   }
-  #about .container #abt .abt-image img {
+  #about #container #abt .abt-image img {
     min-width: 100%;
   }
   .mission {
@@ -951,13 +955,13 @@ nav .navbar-nav .nav-item .nav-link {
   #team,
   #partners,
   #training {
-    padding: 1rem 8rem;
+    padding: 1rem 10rem;
   }
   nav {
-    margin: 0 14rem;
+    margin: 0 10rem;
   }
   #banner {
-    margin: 0 14rem;
+    margin: 0 10rem;
     gap: 10rem;
   }
   #banner .jumbotron #container #text #buttons a {
@@ -968,19 +972,21 @@ nav .navbar-nav .nav-item .nav-link {
     height: 20rem;
   }
   .mission {
-    padding: 1rem 4.825rem;
+    padding: 1rem 6.5rem;
   }
   #services .content {
-    padding: 0 6rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   #contact .tel_container {
-    padding: 0 4rem;
+    padding: 0 6rem;
   }
   #contact .tel_container .tel .phone {
     font-weight: 500;
   }
   #contact .head {
-    padding: 0 5rem;
+    padding: 0 7rem;
   }
 }
 

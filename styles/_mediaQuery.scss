@@ -75,7 +75,7 @@
   }
 
   #about {
-    .container {
+    #container {
       #row1 {
         .head {
           margin: 0 0 1rem 0;
@@ -314,7 +314,7 @@
   }
 
   #about {
-    .container {
+    #container {
       #abt {
         gap: 1rem;
 
@@ -401,15 +401,15 @@
   #team,
   #partners,
   #training {
-    padding: 1rem 8rem;
+    padding: 1rem 10rem;
   }
 
   nav {
-    margin: 0 14rem;
+    margin: 0 10rem;
   }
 
   #banner {
-    margin: 0 14rem;
+    margin: 0 10rem;
     gap: 10rem;
 
     .jumbotron {
@@ -431,18 +431,18 @@
   }
 
   .mission {
-    padding: 1rem 4.825rem;
+    padding: 1rem 6.5rem;
   }
 
   #services {
     .content {
-      padding: 0 6rem;
+      justify-content: space-between;
     }
   }
 
   #contact {
     .tel_container {
-      padding: 0 4rem;
+      padding: 0 6rem;
 
       .tel {
         .phone {
@@ -452,7 +452,7 @@
     }
 
     .head {
-      padding: 0 5rem;
+      padding: 0 7rem;
     }
   }
 }
