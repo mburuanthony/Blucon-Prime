@@ -665,8 +665,8 @@ nav .navbar-nav .nav-item .nav-link {
   }
   #banner .nb-image {
     display: block;
-    width: 16rem;
-    height: 16rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
   }
   #about #container #row1 .head {
@@ -897,8 +897,8 @@ nav .navbar-nav .nav-item .nav-link {
     color: #ffffff;
   }
   #banner .nb-image {
-    width: 18rem;
-    height: 18rem;
+    width: 24rem;
+    height: 24rem;
   }
   #about #container #abt {
     gap: 1rem;
@@ -966,14 +966,14 @@ nav .navbar-nav .nav-item .nav-link {
   }
   #banner {
     margin: 0 10rem;
-    gap: 10rem;
+    gap: 4rem;
   }
   #banner .jumbotron #container #text #buttons a {
     padding: 0.5rem 3rem;
   }
   #banner .nb-image {
-    width: 20rem;
-    height: 20rem;
+    width: 32rem;
+    height: 32rem;
   }
   .mission {
     padding: 1rem 6.5rem;
