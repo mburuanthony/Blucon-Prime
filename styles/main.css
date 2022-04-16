@@ -422,18 +422,52 @@ nav .navbar-nav .nav-item .nav-link {
   padding: 0 1rem;
 }
 
-#training h3 {
+#training .top h3 {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
 }
 
-#training p {
+#training .top p {
   text-align: center;
 }
 
-#training img {
-  width: 100%;
+#training #training_wrapper {
+  margin-top: 1rem 0;
+}
+
+#training #training_wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#training #training_wrapper > div p {
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#training #training_wrapper > div img {
+  width: 20%;
+  border-radius: 0.5rem;
+}
+
+#training #training_wrapper :last-child,
+#training #training_wrapper :nth-child(6) {
+  margin: 0 0 1rem 0;
+}
+
+#training #training_wrapper :last-child img,
+#training #training_wrapper :nth-child(6) img {
+  width: 50%;
 }
 
 #contact {
@@ -647,7 +681,7 @@ nav .navbar-nav .nav-item .nav-link {
     gap: 0.5rem;
   }
   #about .container #abt .abt-image img {
-    width: 14em;
+    width: 13em;
   }
   #about .container #abt .us {
     display: -webkit-box;
@@ -744,16 +778,7 @@ nav .navbar-nav .nav-item .nav-link {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  #training {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #training :nth-child(1) {
+  #training .top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -765,11 +790,34 @@ nav .navbar-nav .nav-item .nav-link {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  #training :nth-child(1) p {
+  #training .top p {
     text-align: left;
   }
-  #training img {
-    width: 50%;
+  #training #training_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #training #training_wrapper > div {
+    width: 12rem;
+    margin: 0 0.5rem;
+  }
+  #training #training_wrapper :last-child,
+  #training #training_wrapper :nth-child(6) {
+    margin: 0 0 1rem 0;
+  }
+  #training #training_wrapper :last-child img,
+  #training #training_wrapper :nth-child(6) img {
+    width: 80%;
   }
   #contact .head {
     margin: 0 3rem;
@@ -820,16 +868,6 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 @media only screen and (min-width: 1024px) {
-  #about,
-  #services,
-  #team,
-  #partners,
-  #training {
-    margin: 0 10rem;
-  }
-  nav {
-    margin: 0 14rem;
-  }
   nav .navbar-nav {
     background-color: #ffffff;
   }
@@ -837,8 +875,6 @@ nav .navbar-nav .nav-item .nav-link {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 0 14rem;
-    gap: 10rem;
   }
   #banner .jumbotron #container #text #buttons :nth-child(2) {
     -webkit-transition: all ease 0.25s;
@@ -850,12 +886,11 @@ nav .navbar-nav .nav-item .nav-link {
     color: #ffffff;
   }
   #banner .nb-image {
-    width: 25rem;
-    height: 25rem;
+    width: 18rem;
+    height: 18rem;
   }
-  .mission {
-    padding: 2rem 11rem;
-    margin: 3rem 0;
+  #about .container #abt {
+    gap: 1rem;
   }
   #about .container #abt .abt-image {
     min-width: 20vw;
@@ -863,20 +898,15 @@ nav .navbar-nav .nav-item .nav-link {
   #about .container #abt .abt-image img {
     min-width: 100%;
   }
+  .mission {
+    margin: 3rem 0;
+  }
   #services .content {
+    gap: 1rem;
     padding: 0;
   }
-  #training :nth-child(1) h3 {
+  #training .top h3 {
     font-size: 18px;
-  }
-  #training img {
-    width: 40%;
-  }
-  #contact .tel_container {
-    margin: 0 14rem;
-  }
-  #contact .head {
-    margin: 0 13rem;
   }
   #contact .tel .phone {
     padding: 0.25rem 2.5rem;
@@ -912,9 +942,42 @@ nav .navbar-nav .nav-item .nav-link {
   }
 }
 
-@media only screen and (min-width: 1290px) {
+@media only screen and (min-width: 1300px) {
+  #about,
+  #services,
+  #team,
+  #partners,
+  #training {
+    padding: 1rem 8rem;
+  }
+  nav {
+    margin: 0 14rem;
+  }
+  #banner {
+    margin: 0 14rem;
+    gap: 10rem;
+  }
   #banner .jumbotron #container #text #buttons a {
     padding: 0.5rem 3rem;
+  }
+  #banner .nb-image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .mission {
+    padding: 1rem 4.825rem;
+  }
+  #services .content {
+    padding: 0 6rem;
+  }
+  #contact .tel_container {
+    padding: 0 4rem;
+  }
+  #contact .tel_container .tel .phone {
+    font-weight: 500;
+  }
+  #contact .head {
+    padding: 0 5rem;
   }
 }
 

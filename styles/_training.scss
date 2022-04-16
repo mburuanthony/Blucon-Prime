@@ -1,17 +1,45 @@
 #training {
   padding: 0 1rem;
 
-  h3 {
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
+  .top {
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
   }
 
-  p {
-    text-align: center;
-  }
+  #training_wrapper {
+    margin-top: 1rem 0;
 
-  img {
-    width: 100%;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+      }
+
+      img {
+        width: 20%;
+        border-radius: 0.5rem;
+      }
+    }
+
+    & :last-child,
+    & :nth-child(6) {
+      margin: 0 0 1rem 0;
+
+      img {
+        width: 50%;
+      }
+    }
   }
 }
