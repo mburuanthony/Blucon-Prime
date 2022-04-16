@@ -39,6 +39,10 @@
           }
 
           #buttons {
+            a {
+              padding: 0.5rem;
+            }
+
             & :nth-child(2) {
               background: $white;
               color: $lighBlue;
@@ -61,8 +65,10 @@
     .container {
       #row1 {
         .head {
+          margin: 1rem 0;
+
           h3 {
-            margin: -1.75rem 0 0.5rem 1rem;
+            margin: -1.75rem 0 1rem 1rem;
           }
 
           h4 {
@@ -75,13 +81,25 @@
       #abt {
         display: flex;
         flex-direction: row;
-        gap: 1.25rem;
+        gap: 0.5rem;
 
         .abt-image {
           min-width: 40vw;
+          min-height: 40vh;
 
-          .us {
-            margin: 0 0 0 1rem;
+          img {
+            width: 100%;
+          }
+        }
+
+        .us {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 1rem;
+
+          p {
+            margin: 0;
           }
         }
       }
@@ -108,10 +126,6 @@
     hr {
       width: 10rem;
       transform: rotate(90deg);
-    }
-
-    & > div {
-      width: 50%;
     }
   }
 
@@ -228,33 +242,70 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  nav,
   #about,
+  #services,
   #team,
   #partners,
   #training {
-    margin: 0 5rem;
+    margin: 0 10rem;
+  }
+
+  nav {
+    margin: 0 14rem;
+
+    .navbar-nav {
+      background-color: $white;
+    }
   }
 
   #banner {
+    width: fit-content;
+    margin: 0 14rem;
+    gap: 4rem;
+
     .jumbotron {
-      margin: 0 5rem;
+      #container {
+        #text {
+          #buttons {
+            & :nth-child(2) {
+              transition: all ease 0.25s;
+
+              &:hover {
+                border-color: $darkBlue;
+                background: $darkBlue;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
     }
 
     .nb-image {
-      margin: 0 5rem 0 0;
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+
+  .mission {
+    padding: 2rem 11rem;
+    margin: 3rem 0;
+  }
+
+  #about {
+    .container {
+      #abt {
+        .abt-image {
+          min-width: 20vw;
+        }
+      }
     }
   }
 
   #services {
-    margin: 3rem 5rem 0 5rem;
-  }
-
-  #team {
-    .team_wrapper {
-      & > div {
-        min-width: 16.25rem;
-      }
+    .content {
+      align-items: flex-start;
+      justify-content: flex-start;
     }
   }
 
@@ -262,10 +313,6 @@
     & :nth-child(1) {
       h3 {
         font-size: 18px;
-      }
-
-      p {
-        font-size: 14px;
       }
     }
 
@@ -275,9 +322,12 @@
   }
 
   #contact {
-    .head,
     .tel_container {
-      margin: 0 5rem;
+      margin: 0 11rem;
+    }
+
+    .head {
+      margin: 0 10rem;
     }
 
     .tel {
@@ -290,11 +340,20 @@
       justify-content: flex-start;
 
       .tel {
-        font-size: 14px;
+        font-size: 1rem;
+
+        .phone {
+          transition: all ease 0.25s;
+
+          &:hover {
+            background-color: $lighBlue;
+            color: $white;
+          }
+        }
       }
 
       ._copy {
-        margin: 0 0 0 6rem;
+        margin: 0 0 0 8rem;
 
         #logo_footer {
           p {
@@ -311,6 +370,22 @@
 
         p {
           font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1290px) {
+  #banner {
+    .jumbotron {
+      #container {
+        #text {
+          #buttons {
+            a {
+              padding: 0.5rem 3rem;
+            }
+          }
         }
       }
     }
