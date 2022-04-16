@@ -222,6 +222,10 @@
       & > div {
         width: 12rem;
         margin: 0 0.5rem;
+
+        img {
+          width: 50%;
+        }
       }
 
       & :last-child,

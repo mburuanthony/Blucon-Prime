@@ -811,6 +811,9 @@ nav .navbar-nav .nav-item .nav-link {
     width: 12rem;
     margin: 0 0.5rem;
   }
+  #training #training_wrapper > div img {
+    width: 50%;
+  }
   #training #training_wrapper :last-child,
   #training #training_wrapper :nth-child(6) {
     margin: 0 0 1rem 0;
