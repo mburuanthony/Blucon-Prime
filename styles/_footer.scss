@@ -8,8 +8,6 @@
   color: $white;
 
   .head {
-    // margin-top: 1rem;
-
     hr {
       border-width: 2px;
       background-color: $lighBlue;
@@ -46,10 +44,10 @@
     .tel {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: center !important;
 
       @include tablet-upwards {
-        align-items: flex-start;
+        align-items: flex-start !important;
         font-size: 1rem;
       }
 
@@ -62,16 +60,18 @@
       }
 
       .phone {
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 3rem;
         margin: 1rem 0;
         background-color: $white;
         color: $darkBlue;
         font-weight: 600;
 
-        @include desktop {
+        @include tablet-upwards {
           padding: 0.25rem 2.5rem;
           font-weight: 500;
+        }
 
+        @include desktop {
           transition: all ease 0.25s;
 
           &:hover {
@@ -111,7 +111,10 @@
       img {
         width: 7.5rem;
         height: 7.5rem;
-        margin: 0 4px 0 0;
+
+        @include tablet-upwards {
+          margin-right: 4px;
+        }
       }
 
       p {
