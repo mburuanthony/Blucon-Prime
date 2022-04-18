@@ -4,9 +4,9 @@
 #banner {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/hero_image.jpg");
+  background-image: url("../img/diamond-from-coal.webp");
   background-size: cover;
-  background-position: center;
+  background-position: 25% center;
   background-repeat: no-repeat;
 
   @include tablet-upwards {
@@ -44,6 +44,7 @@
   .jumbotron {
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 8rem;
     background-color: transparent;
     border-radius: 0;
     display: flex;
