@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
 
   @include tablet-upwards {
+    height: fit-content;
     background-image: none;
   }
 
