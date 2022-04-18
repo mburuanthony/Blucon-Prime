@@ -8,16 +8,16 @@
   color: $white;
 
   .head {
-    margin: 1rem 0 0 0;
-    padding: 0 1rem;
+    margin-top: 1rem;
+    // padding: 0 1rem;
 
-    @include tablet-upwards {
-      margin: 0 3rem;
-    }
+    // @include tablet-upwards {
+    //   margin: 0 3rem;
+    // }
 
-    @include big-desktop {
-      padding: 0 4rem;
-    }
+    // @include big-desktop {
+    //   padding: 0 4rem;
+    // }
 
     hr {
       border-width: 2px;
@@ -46,16 +46,16 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      margin: 0 4rem;
+      // margin: 0 4rem;
     }
 
     @include desktop {
       justify-content: flex-start;
     }
 
-    @include big-desktop {
-      padding: 0 3rem;
-    }
+    // @include big-desktop {
+    //   padding: 0 3rem;
+    // }
 
     .tel {
       display: flex;

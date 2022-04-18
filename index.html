@@ -87,17 +87,16 @@
       sizes="16x16"
       href="Favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="Favicon/manifest.json" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
   <body>
-    <section id="banner">
+    <section id="banner" class="body-container">
       <nav class="navbar navbar-expand-md">
         <a class="navbar-brand logo" id="logo_navbar" href="/">
           <img src="img/picture1.png" />
           <p>
-            <span>Blucon</span>
+            <span class="blucon">Blucon</span>
             <span>consulting ltd</span>
           </p>
         </a>
@@ -148,8 +147,8 @@
 
       <div class="jumbotron">
         <div class="landing">
-          <h2>Sustainable Business Transformation</h2>
-          <p>
+          <h1 class="title">Sustainable Business Transformation</h1>
+          <p class="content">
             We are a business consultancy firm based at the heart of the Coast
             of Kenya, with a focus on the Blue Economy
           </p>
@@ -166,7 +165,7 @@
       </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about body-container" id="about">
       <div id="container">
         <div class="head">
           <hr />
@@ -218,26 +217,28 @@
     </section>
 
     <section class="mission">
-      <div class="_vision">
-        <h5>VISION</h5>
-        <p>
-          To be recognized as an impactful, innovative and efficient Mangement
-          Consulting partner
-        </p>
-      </div>
+      <div class="body-container mission__">
+        <div class="_vision">
+          <h5>VISION</h5>
+          <p>
+            To be recognized as an impactful, innovative and efficient Mangement
+            Consulting partner
+          </p>
+        </div>
 
-      <hr />
+        <hr />
 
-      <div class="_mision">
-        <h5>MISSION</h5>
-        <p>
-          To understand the clients' unique needs and carve out innovative and
-          comprehensive solutions through professional consulting services
-        </p>
+        <div class="_mision">
+          <h5>MISSION</h5>
+          <p>
+            To understand the clients' unique needs and carve out innovative and
+            comprehensive solutions through professional consulting services
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="body-container">
       <div class="head">
         <hr />
         <h3>OUR SERVICES</h3>
@@ -245,7 +246,11 @@
 
       <div class="content">
         <div>
-          <img src="img/propasal.png" alt="" />
+          <img
+            src="img/propasal.png"
+            alt="..."
+            style="width: 50%; height: 22%"
+          />
           <h5>
             Propasal Writing and<br />
             execution
@@ -259,7 +264,11 @@
         </div>
 
         <div>
-          <img src="img/strategy.png" alt="" />
+          <img
+            src="img/strategy.png"
+            alt="..."
+            style="width: 50%; height: 22%"
+          />
           <h5>
             Strategy and<br />
             Advisory
@@ -271,7 +280,11 @@
         </div>
 
         <div>
-          <img src="img/advertising.png" alt="" />
+          <img
+            src="img/advertising.png"
+            alt="..."
+            style="width: 50%; height: 22%"
+          />
           <h5>Advertising</h5>
           <p>
             We work with SMEs and growing businesses and organizations to
@@ -283,8 +296,8 @@
         <div>
           <img
             src="img/sustainability.jpg"
-            alt=""
-            style="width: 50%; height: 25%"
+            alt="..."
+            style="width: 50%; height: 22%"
           />
           <h5>Sustainability<br />Solutions</h5>
           <p>
@@ -295,7 +308,11 @@
         </div>
 
         <div>
-          <img src="img/research.jpg" alt="" style="width: 50%; height: 22%" />
+          <img
+            src="img/monitoring.png"
+            alt=""
+            style="width: 50%; height: 22%"
+          />
           <h5>
             Monitoring and<br />
             Evaluation
@@ -310,7 +327,11 @@
         </div>
 
         <div>
-          <i class="fa-solid fa-chart-line"></i>
+          <img
+            src="img/research.jpg"
+            alt="..."
+            style="width: 50%; height: 22%"
+          />
           <h5>Research</h5>
           <p>
             We offer customized quality research solutions that include market
@@ -319,7 +340,7 @@
           </p>
         </div>
 
-        <div>
+        <!-- <div>
           <img src="img/feasibility.png" alt="" style="width: 40%" />
           <h5>Feasibility Studies</h5>
           <p>
@@ -329,11 +350,11 @@
             well-grounded feasibility of any venture is the key to unlocking
             business potential and investment.
           </p>
-        </div>
+        </div> -->
       </div>
     </section>
 
-    <section id="team">
+    <section id="team" class="body-container">
       <div class="head">
         <hr />
         <h3>OUR TEAM</h3>
@@ -416,7 +437,7 @@
       </div>
     </section>
 
-    <section id="partners">
+    <section id="partners" class="body-container">
       <div class="head">
         <hr />
         <h3>OUR PARTNERS</h3>
@@ -437,7 +458,7 @@
       </div>
     </section>
 
-    <section id="training">
+    <section id="training" class="body-container">
       <div class="top">
         <h3>TRAINING AND CAPACITY BUILDING</h3>
         <p>
@@ -497,37 +518,39 @@
     </section>
 
     <section id="contact">
-      <div class="head">
-        <hr />
-        <h3 style="color: #fff; font-size: 1.25rem">CONTACT US</h3>
-      </div>
-
-      <div class="tel_container">
-        <div class="tel">
-          <p>
-            <i class="fa-solid fa-phone"></i> 0726 701452, 0715 637857, 0777
-            100883
-          </p>
-          <p>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:bluconkenya@gmail.com" class="mail"
-              >bluconkenya@gmail.com</a
-            >
-          </p>
-          <p><i class="fa-solid fa-location-dot"></i>Links Rd, Mombasa</p>
-          <a href="tel:0726 701452" class="phone">Hire Us</a>
+      <div class="body-container">
+        <div class="head">
+          <hr />
+          <h3 style="color: #fff; font-size: 1.25rem">CONTACT US</h3>
         </div>
 
-        <div class="_copy">
-          <div id="logo_footer">
-            <img src="img/picture1.png" />
+        <div class="tel_container">
+          <div class="tel">
             <p>
-              <span id="company">Blucon</span>
-              <span id="ltd">consulting ltd</span>
+              <i class="fa-solid fa-phone"></i> 0726 701452, 0715 637857, 0777
+              100883
             </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:bluconkenya@gmail.com" class="mail"
+                >bluconkenya@gmail.com</a
+              >
+            </p>
+            <p><i class="fa-solid fa-location-dot"></i>Links Rd, Mombasa</p>
+            <a href="tel:0726 701452" class="phone">Hire Us</a>
           </div>
 
-          <p class="copy">Copyright &copy;<span id="year"></span></p>
+          <div class="_copy">
+            <div id="logo_footer">
+              <img src="img/picture1.png" />
+              <p>
+                <span id="company">Blucon</span>
+                <span id="ltd">consulting ltd</span>
+              </p>
+            </div>
+
+            <p class="copy">Copyright &copy;<span id="year"></span></p>
+          </div>
         </div>
       </div>
     </section>

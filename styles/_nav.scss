@@ -2,6 +2,7 @@
 @import "./mixins";
 
 nav {
+  align-items: center;
   .navbar-toggler {
     i {
       color: $white;
@@ -10,36 +11,44 @@ nav {
 
   #logo_navbar {
     display: flex;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: flex-end;
 
     img {
       width: 2.5rem;
       height: 2.5rem;
       margin: 0 4px 0 0;
+      padding: 0;
     }
 
     p {
+      all: unset;
       width: fit-content;
       display: flex;
       flex-direction: column;
+      margin-bottom: 4px;
 
-      & :nth-child(1) {
+      .blucon {
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: bold;
         color: $lighBlue;
       }
 
       & :nth-child(2) {
         color: $textColor;
+        text-transform: uppercase;
+        font-size: 10px;
       }
 
       span {
+        line-height: 1;
         margin: 0;
         padding: 0;
-        font-size: 10px;
-        font-weight: 600;
-        text-transform: uppercase;
       }
     }
   }
@@ -47,11 +56,14 @@ nav {
   .navbar-nav {
     background-color: rgba(255, 255, 255, 0.65);
     border-radius: 0.5rem;
+    @include phone-only {
+      margin-top: 8px;
+    }
 
     .nav-item {
       .nav-link {
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         color: $black;
       }

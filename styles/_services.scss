@@ -2,19 +2,10 @@
 @import "./mixins";
 
 #services {
-  @include tablet-upwards {
-    @include tablet-padding();
-  }
-
-  @include big-desktop {
-    @include desktop-padding();
-  }
-
-  margin: 3rem 0 0 0;
+  margin-top: 3rem;
 
   .head {
-    margin: 0 0 2rem 0;
-    padding: 0 1rem;
+    margin-bottom: 2rem;
 
     hr {
       border-width: 2px;
@@ -41,8 +32,6 @@
   }
 
   .content {
-    padding: 0 2rem;
-
     @include tablet-upwards {
       display: flex;
       flex-direction: row;
@@ -66,32 +55,31 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 1rem 0;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       padding: 0.5rem;
       background-color: $white;
       box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.05);
       border-radius: 16px;
 
       img {
-        margin: 1rem 0 0.5rem 0;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
         width: 50%;
+        object-fit: contain;
         border-radius: 6px;
 
         @include tablet-upwards {
-          margin: 0.5rem 0;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
         }
-      }
-
-      i {
-        margin: 1rem 0 0.5rem 0;
-        font-size: 2rem;
-        columns: $lighBlue;
       }
 
       h5 {
         width: 100%;
         margin: 8px 0 10px 0;
         font-size: 18px;
+        font-weight: 600;
         text-align: center;
 
         @include tablet-upwards {

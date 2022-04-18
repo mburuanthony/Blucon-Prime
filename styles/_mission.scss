@@ -3,8 +3,12 @@
 
 .mission {
   margin: 1rem 0;
-  padding: 1.25rem 1rem 0.25rem 1rem;
   background: $lighBlue;
+}
+.mission__ {
+  // padding: 1.25rem 1rem 0.25rem 1rem;
+  padding: 1rem;
+  // background: red;
 
   @include tablet-upwards {
     max-width: 100%;
@@ -14,23 +18,23 @@
     justify-content: center;
   }
 
-  @include desktop {
-    margin: 2rem 0 0 0;
-  }
+  // @include desktop {
+  //   margin: 2rem 0 0 0;
+  // }
 
-  @include big-desktop {
-    padding: 1rem 4rem;
-  }
+  // @include big-desktop {
+  //   padding: 1rem 4rem;
+  // }
 
   ._vision {
     @include tablet-upwards {
-      margin: 0 0 0 3rem;
+      // margin: 0 0 0 3rem;
     }
   }
 
   ._mission {
     @include tablet-upwards {
-      margin: 0 3rem 0 0;
+      // margin: 0 3rem 0 0;
     }
   }
 
