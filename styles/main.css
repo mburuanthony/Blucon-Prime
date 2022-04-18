@@ -469,6 +469,9 @@ nav .navbar-nav .nav-item .nav-link {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -511,9 +514,10 @@ nav .navbar-nav .nav-item .nav-link {
 #services .content > div img {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  width: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 76px;
+  height: 76px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 6px;
 }
 
@@ -715,6 +719,35 @@ nav .navbar-nav .nav-item .nav-link {
   padding: 0 1rem;
 }
 
+#training .head {
+  margin-bottom: 2rem;
+}
+
+#training .head hr {
+  border-width: 2px;
+}
+
+#training .head h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0.5rem;
+  margin: -1.75rem auto 0.5rem auto;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  #training .head h3 {
+    margin: -1.75rem 0 0.5rem 1rem;
+  }
+}
+
+#training .top .img_train {
+  width: 100%;
+}
+
 #training .top h3 {
   font-size: 18px;
   font-weight: 600;
@@ -748,13 +781,18 @@ nav .navbar-nav .nav-item .nav-link {
 
 #training #training_wrapper {
   margin-top: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   #training #training_wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -781,6 +819,9 @@ nav .navbar-nav .nav-item .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid #c4c4c4;
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 768px) {

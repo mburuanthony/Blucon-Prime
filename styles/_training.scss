@@ -3,15 +3,32 @@
 #training {
   padding: 0 1rem;
 
-  // @include tablet-upwards {
-  //   @include tablet-padding();
-  // }
+  .head {
+    margin-bottom: 2rem;
 
-  // @include big-desktop {
-  //   @include desktop-padding();
-  // }
+    hr {
+      border-width: 2px;
+    }
+
+    h3 {
+      width: fit-content;
+      padding: 0 0.5rem;
+      margin: -1.75rem auto 0.5rem auto;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: $white;
+
+      @include tablet-upwards {
+        margin: -1.75rem 0 0.5rem 1rem;
+      }
+    }
+  }
 
   .top {
+    .img_train {
+      width: 100%;
+    }
+
     h3 {
       font-size: 18px;
       font-weight: 600;
@@ -35,9 +52,11 @@
 
   #training_wrapper {
     margin-top: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 
     @include tablet-upwards {
-      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: flex-start;
@@ -48,6 +67,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      border: 1px solid #c4c4c4;
+      border-radius: 0.5rem;
+      padding: 1rem;
 
       @include tablet-upwards {
         width: 12rem;
