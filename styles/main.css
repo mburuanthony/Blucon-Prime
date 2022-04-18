@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
-nav {
-  background-image: url("../img/handshake.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
 nav .navbar-toggler i {
   color: #ffffff;
 }
@@ -68,87 +60,184 @@ nav .navbar-nav {
 nav .navbar-nav .nav-item .nav-link {
   text-align: center;
   font-size: 16px;
-  font-weight: bolder;
+  font-weight: 600;
   color: #000000;
 }
 
-#topheader .navbar-nav li.active > a {
+#banner .navbar-nav li.active > a {
   color: #199bf1;
 }
 
 #banner {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/handshake.jpg");
+  background-image: url("../img/hero_image.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
+@media only screen and (min-width: 768px) {
+  #banner {
+    background-image: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #banner {
+    width: 92vw;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #banner #topheader nav #logo_navbar img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #banner #topheader nav .navbar-nav {
+    background-color: #ffffff;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #banner #topheader nav .navbar-nav .nav-item .nav-link {
+    color: #000000;
+  }
+}
+
 #banner .jumbotron {
-  margin: 0 0 1rem 0;
-  padding: 0 2rem;
+  padding: 0 1rem;
   background-color: transparent;
   border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+  position: relative;
 }
 
-#banner .jumbotron #container .landing {
-  margin: 4rem 0 0 0;
+@media only screen and (max-width: 767px) {
+  #banner .jumbotron {
+    height: 50vh;
+  }
 }
 
-#banner .jumbotron #container .landing h2 {
-  font-weight: bold;
+@media only screen and (min-width: 1024px) {
+  #banner .jumbotron {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#banner .jumbotron .landing {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: #ffffff;
 }
 
-#banner .jumbotron #container .landing p {
-  color: #ffffff;
+@media only screen and (min-width: 1024px) {
+  #banner .jumbotron .landing {
+    margin-left: 4px;
+  }
 }
 
-#banner .jumbotron #container #text #buttons {
-  margin: 2rem 0 0 0;
+@media only screen and (min-width: 768px) {
+  #banner .jumbotron .landing h2,
+  #banner .jumbotron .landing p {
+    color: #000000;
+  }
 }
 
-#banner .jumbotron #container #text #buttons a {
-  text-decoration: none;
-  text-transform: capitalize;
-  padding: 4px 12px;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-}
-
-#banner .jumbotron #container #text #buttons :nth-child(1) {
-  background-color: #199bf1;
-  border: 1px solid #199bf1;
-  color: #ffffff;
-}
-
-#banner .jumbotron #container #text #buttons :nth-child(2) {
-  margin-left: 1rem;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-}
-
-#banner .nb-image {
+#banner .jumbotron #hero-image {
   display: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  #banner .jumbotron #hero-image {
+    display: block;
+  }
+}
+
+#banner .jumbotron #hero-image:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#banner .jumbotron #hero-image .nb-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom center;
+     object-position: bottom center;
+}
+
+@media only screen and (min-width: 768px) {
+  #banner .jumbotron #hero-image .nb-image {
+    display: block;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #about {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #about {
+    padding: 1rem 6rem;
+  }
 }
 
 #about #container {
   padding: 0 1rem;
 }
 
-#about #container #row1 .head {
+#about #container .head {
   margin: 2rem 0 1rem 0;
 }
 
-#about #container #row1 .head hr {
+#about #container .head hr {
   border-width: 2px;
 }
 
-#about #container #row1 .head h3 {
+#about #container .head h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -159,29 +248,92 @@ nav .navbar-nav .nav-item .nav-link {
   background-color: #ffffff;
 }
 
-#about #container #row1 .head h4 {
+@media only screen and (min-width: 768px) {
+  #about #container .head h3 {
+    margin: -1.75rem 0 1rem 1rem;
+  }
+}
+
+#about #container .head h4 {
   font-size: 16px;
   font-weight: 600;
 }
 
-#about #container .abt-image {
-  width: 100%;
+@media only screen and (min-width: 768px) {
+  #about #container .head h4 {
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
 }
 
-#about #container .abt-image img {
+@media only screen and (min-width: 768px) {
+  #about #container #abt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #about #container #abt {
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #about #container #abt .abt-image {
+    max-width: 13em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #about #container #abt .abt-image {
+    max-width: unset;
+  }
+}
+
+#about #container #abt .abt-image img {
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   margin: 0 0 10px 0;
 }
 
-#about #container .us p {
-  margin: 0 0 1rem 0;
+@media only screen and (min-width: 768px) {
+  #about #container #abt .us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#about #container #abt .us p {
+  margin: 0;
   color: #8c8c8c;
 }
 
 #about .location {
   margin: 0.5rem 0 1rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #about .location {
+    margin: 2rem 0 0 0;
+  }
 }
 
 #about .location p {
@@ -191,6 +343,13 @@ nav .navbar-nav .nav-item .nav-link {
   font-weight: bold;
   text-transform: uppercase;
   color: #014a7d;
+}
+
+@media only screen and (min-width: 768px) {
+  #about .location p {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 #about .location img {
@@ -205,8 +364,59 @@ nav .navbar-nav .nav-item .nav-link {
   background: #199bf1;
 }
 
+@media only screen and (min-width: 768px) {
+  .mission {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .mission {
+    margin: 2rem 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .mission {
+    padding: 1rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mission ._vision {
+    margin: 0 0 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mission ._mission {
+    margin: 0 3rem 0 0;
+  }
+}
+
 .mission hr {
   background-color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .mission hr {
+    width: 10rem;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
 }
 
 .mission > div h5 {
@@ -220,6 +430,18 @@ nav .navbar-nav .nav-item .nav-link {
 
 #services {
   margin: 3rem 0 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #services {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #services {
+    padding: 1rem 6rem;
+  }
 }
 
 #services .head {
@@ -242,6 +464,12 @@ nav .navbar-nav .nav-item .nav-link {
   background-color: #ffffff;
 }
 
+@media only screen and (min-width: 768px) {
+  #services .head h3 {
+    margin: -1.75rem 0 0.5rem 1rem;
+  }
+}
+
 #services .head h4 {
   margin: 0 0 1rem 0;
   font-size: 16px;
@@ -250,6 +478,30 @@ nav .navbar-nav .nav-item .nav-link {
 
 #services .content {
   padding: 0 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #services .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #services .content {
+    gap: 1rem;
+    padding: 0;
+  }
 }
 
 #services .content > div {
@@ -271,10 +523,25 @@ nav .navbar-nav .nav-item .nav-link {
   border-radius: 16px;
 }
 
+@media only screen and (min-width: 768px) {
+  #services .content > div {
+    width: 16.25rem;
+    height: 24rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
 #services .content > div img {
   margin: 1rem 0 0.5rem 0;
   width: 50%;
   border-radius: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+  #services .content > div img {
+    margin: 0.5rem 0;
+  }
 }
 
 #services .content > div i {
@@ -291,14 +558,39 @@ nav .navbar-nav .nav-item .nav-link {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  #services .content > div h5 {
+    font-size: 18px;
+  }
+}
+
 #services .content > div p {
   text-align: center;
   color: #8c8c8c;
 }
 
+@media only screen and (min-width: 768px) {
+  #services .content > div p {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
 #team {
   margin: 2rem 0 0 0;
   padding: 0 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #team {
+    padding: 1rem 6rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #team {
+    padding: 1rem 6rem;
+  }
 }
 
 #team .head {
@@ -320,6 +612,12 @@ nav .navbar-nav .nav-item .nav-link {
   background-color: #ffffff;
 }
 
+@media only screen and (min-width: 768px) {
+  #team .head h3 {
+    margin: -1.75rem 0 0.5rem 1rem;
+  }
+}
+
 #team .team_wrapper {
   padding: 4rem 0 1rem 0;
   width: 100%;
@@ -334,6 +632,9 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 #team .team_wrapper > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   min-width: 20rem;
   padding: 0 1rem;
   margin: 0 1.25rem;
@@ -363,6 +664,8 @@ nav .navbar-nav .nav-item .nav-link {
 #team .team_wrapper > div #img img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 10px solid #ffffff;
   border-radius: 50%;
 }
@@ -393,6 +696,18 @@ nav .navbar-nav .nav-item .nav-link {
   padding: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  #partners {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #partners {
+    padding: 1rem 6rem;
+  }
+}
+
 #partners .head hr {
   border-width: 2px;
 }
@@ -406,6 +721,12 @@ nav .navbar-nav .nav-item .nav-link {
   font-size: 18px;
   font-weight: 600;
   background-color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  #partners .head h3 {
+    margin: -1.75rem 0 0.5rem 1rem;
+  }
 }
 
 #partners .partners_wrapper {
@@ -427,8 +748,28 @@ nav .navbar-nav .nav-item .nav-link {
   max-width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  #partners .partners_wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 #training {
   padding: 0 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #training {
+    padding: 0.5rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #training {
+    padding: 1rem 6rem;
+  }
 }
 
 #training .top h3 {
@@ -437,12 +778,50 @@ nav .navbar-nav .nav-item .nav-link {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  #training .top h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 #training .top p {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  #training .top p {
+    text-align: left;
+  }
+}
+
 #training #training_wrapper {
   margin-top: 1rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #training #training_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 #training #training_wrapper > div {
@@ -458,6 +837,13 @@ nav .navbar-nav .nav-item .nav-link {
           align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  #training #training_wrapper > div {
+    width: 12rem;
+    margin: 0 0.5rem;
+  }
+}
+
 #training #training_wrapper > div p {
   font-weight: 600;
   text-transform: capitalize;
@@ -469,14 +855,34 @@ nav .navbar-nav .nav-item .nav-link {
   border-radius: 0.5rem;
 }
 
+@media only screen and (min-width: 768px) {
+  #training #training_wrapper > div img {
+    width: 50%;
+  }
+}
+
 #training #training_wrapper :last-child,
 #training #training_wrapper :nth-child(6) {
   margin: 0 0 1rem 0;
 }
 
+@media only screen and (min-width: 768px) {
+  #training #training_wrapper :last-child,
+  #training #training_wrapper :nth-child(6) {
+    margin: 0 0 1rem 0;
+  }
+}
+
 #training #training_wrapper :last-child img,
 #training #training_wrapper :nth-child(6) img {
   width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  #training #training_wrapper :last-child img,
+  #training #training_wrapper :nth-child(6) img {
+    width: 80%;
+  }
 }
 
 #contact {
@@ -489,6 +895,18 @@ nav .navbar-nav .nav-item .nav-link {
 #contact .head {
   margin: 1rem 0 0 0;
   padding: 0 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #contact .head {
+    margin: 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #contact .head {
+    padding: 0 4rem;
+  }
 }
 
 #contact .head hr {
@@ -507,8 +925,47 @@ nav .navbar-nav .nav-item .nav-link {
   background-color: #014a7d;
 }
 
+@media only screen and (min-width: 768px) {
+  #contact .head h3 {
+    margin: -1.75rem 0 0.5rem 1rem;
+  }
+}
+
 #contact .tel_container {
   margin: 1rem 0 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #contact .tel_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #contact .tel_container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #contact .tel_container {
+    padding: 0 3rem;
+  }
 }
 
 #contact .tel_container .tel {
@@ -522,6 +979,15 @@ nav .navbar-nav .nav-item .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #contact .tel_container .tel {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 1rem;
+  }
 }
 
 #contact .tel_container .tel a {
@@ -540,12 +1006,31 @@ nav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
 }
 
+@media only screen and (min-width: 1024px) {
+  #contact .tel_container .tel .phone {
+    padding: 0.25rem 2.5rem;
+    font-weight: 500;
+    -webkit-transition: all ease 0.25s;
+    transition: all ease 0.25s;
+  }
+  #contact .tel_container .tel .phone:hover {
+    background-color: #199bf1;
+    color: #ffffff;
+  }
+}
+
 #contact .tel_container .tel p {
   font-weight: normal;
 }
 
 #contact .tel_container .tel p i {
   margin: 0 0.5rem 0 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  #contact ._copy {
+    margin: 0 0 0 8rem;
+  }
 }
 
 #contact ._copy #logo_footer {
@@ -563,6 +1048,18 @@ nav .navbar-nav .nav-item .nav-link {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  #contact ._copy #logo_footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 #contact ._copy #logo_footer img {
@@ -587,6 +1084,15 @@ nav .navbar-nav .nav-item .nav-link {
           align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  #contact ._copy #logo_footer p {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 0 0 0 1rem;
+  }
+}
+
 #contact ._copy #logo_footer p span {
   font-size: 14px;
   text-transform: uppercase;
@@ -598,6 +1104,13 @@ nav .navbar-nav .nav-item .nav-link {
   color: #199bf1;
 }
 
+@media only screen and (min-width: 1024px) {
+  #contact ._copy #logo_footer p :nth-child(1) {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+}
+
 #contact ._copy #logo_footer p :nth-child(2) {
   color: #ffffff;
 }
@@ -607,385 +1120,15 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 @media only screen and (min-width: 768px) {
-  #about,
-  #services,
-  #team,
-  #partners,
-  #training {
-    padding: 0.5rem 4rem;
-  }
-  nav {
-    background-image: none;
-    margin: 0 3.5rem;
-  }
-  nav #logo_navbar img {
-    width: 4rem;
-    height: 4rem;
-  }
-  nav .navbar-nav {
-    background-color: #ffffff;
-  }
-  nav .navbar-nav .nav-item .nav-link {
-    color: #000000;
-  }
-  #banner {
-    background-image: none;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    margin: 0 4rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #banner .jumbotron #container #text .landing h2,
-  #banner .jumbotron #container #text .landing p {
-    color: #000000;
-  }
-  #banner .jumbotron #container #text #buttons a {
-    padding: 0.5rem;
-  }
-  #banner .jumbotron #container #text #buttons :nth-child(2) {
-    background: #ffffff;
-    color: #199bf1;
-    border-color: #199bf1;
-  }
-  #banner .nb-image {
-    display: block;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-  }
-  #about #container #row1 .head {
-    margin: 0 0 1rem 0;
-  }
-  #about #container #row1 .head h3 {
-    margin: -1.75rem 0 1rem 1rem;
-  }
-  #about #container #row1 .head h4 {
-    font-size: 1.25rem;
-    font-weight: bolder;
-  }
-  #about #container #abt {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 0.5rem;
-  }
-  #about #container #abt .abt-image img {
-    width: 13em;
-  }
-  #about #container #abt .us {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 0.25rem;
-  }
-  #about #container #abt .us p {
-    margin: 0;
-  }
-  #about .location {
-    margin: 2rem 0 0 0;
-  }
-  #about .location p {
-    font-size: 16px;
-    text-align: center;
-  }
-  .mission {
-    max-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .mission ._vision {
-    margin: 0 0 0 4rem;
-  }
-  .mission ._mision {
-    margin: 0 4rem 0 0;
-  }
-  .mission hr {
-    width: 10rem;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  #services .head h3 {
-    margin: -1.75rem 0 0.5rem 1rem;
-  }
-  #services .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  #services .content > div {
-    width: 16.25rem;
-    height: 24rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
-  }
-  #services .content > div img {
-    margin: 0.5rem 0;
-  }
-  #services .content > div h5 {
-    font-size: 18px;
-  }
-  #services .content > div p {
-    font-size: 14px;
-    text-align: left;
-  }
-  #team .head h3 {
-    margin: -1.75rem 0 0.5rem 1rem;
-  }
-  #partners .head h3 {
-    margin: -1.75rem 0 0.5rem 1rem;
-  }
-  #partners .partners_wrapper {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  #training .top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #training .top p {
-    text-align: left;
-  }
-  #training #training_wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #training #training_wrapper > div {
-    width: 12rem;
-    margin: 0 0.5rem;
-  }
-  #training #training_wrapper > div img {
-    width: 50%;
-  }
-  #training #training_wrapper :last-child,
-  #training #training_wrapper :nth-child(6) {
-    margin: 0 0 1rem 0;
-  }
-  #training #training_wrapper :last-child img,
-  #training #training_wrapper :nth-child(6) img {
-    width: 80%;
-  }
-  #contact .head {
-    margin: 0 3rem;
-  }
-  #contact .head h3 {
-    margin: -1.75rem 0 0.5rem 1rem;
-  }
-  #contact .tel_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 0 4rem;
-  }
-  #contact .tel_container .tel {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #contact .tel_container ._copy #logo_footer {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #contact .tel_container ._copy #logo_footer p {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin: 0 0 0 0 1rem;
-  }
-  #contact .tel_container .copy {
+  #contact ._copy .copy {
     margin: 1.25rem 0 0 0;
     text-align: left;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  nav .navbar-nav {
-    background-color: #ffffff;
-  }
-  #banner {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  #banner .jumbotron #container #text #buttons :nth-child(2) {
-    -webkit-transition: all ease 0.25s;
-    transition: all ease 0.25s;
-  }
-  #banner .jumbotron #container #text #buttons :nth-child(2):hover {
-    border-color: #014a7d;
-    background: #014a7d;
-    color: #ffffff;
-  }
-  #banner .nb-image {
-    width: 24rem;
-    height: 24rem;
-  }
-  #about #container #abt {
-    gap: 1rem;
-  }
-  #about #container #abt .abt-image {
-    min-width: 20vw;
-  }
-  #about #container #abt .abt-image img {
-    min-width: 100%;
-  }
-  .mission {
-    margin: 3rem 0;
-  }
-  #services .content {
-    gap: 1rem;
-    padding: 0;
-  }
-  #training .top h3 {
-    font-size: 18px;
-  }
-  #contact .tel .phone {
-    padding: 0.25rem 2.5rem;
-  }
-  #contact .tel_container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  #contact .tel_container .tel {
-    font-size: 1rem;
-  }
-  #contact .tel_container .tel .phone {
-    -webkit-transition: all ease 0.25s;
-    transition: all ease 0.25s;
-  }
-  #contact .tel_container .tel .phone:hover {
-    background-color: #199bf1;
-    color: #ffffff;
-  }
-  #contact .tel_container ._copy {
-    margin: 0 0 0 8rem;
-  }
-  #contact .tel_container ._copy #logo_footer p :nth-child(1) {
-    font-weight: 600;
-    font-size: 1.25rem;
-  }
-  #contact .tel_container ._copy #logo_footer p :nth-child(2) {
-    font-size: 12px;
-  }
-  #contact .tel_container ._copy p {
+  #contact ._copy .copy {
     font-size: 14px;
-  }
-}
-
-@media only screen and (min-width: 1300px) {
-  #about,
-  #services,
-  #team,
-  #partners,
-  #training {
-    padding: 1rem 10rem;
-  }
-  nav {
-    margin: 0 10rem;
-  }
-  #banner {
-    margin: 0 10rem;
-    gap: 4rem;
-  }
-  #banner .jumbotron #container #text #buttons a {
-    padding: 0.5rem 3rem;
-  }
-  #banner .nb-image {
-    width: 32rem;
-    height: 32rem;
-  }
-  .mission {
-    padding: 1rem 6.5rem;
-  }
-  #contact .tel_container {
-    padding: 0 6rem;
-  }
-  #contact .tel_container .tel .phone {
-    font-weight: 500;
-  }
-  #contact .head {
-    padding: 0 7rem;
   }
 }
 

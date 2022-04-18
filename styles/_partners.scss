@@ -1,5 +1,15 @@
+@import "./mixins";
+
 #partners {
   padding: 1rem;
+
+  @include tablet-upwards {
+    @include tablet-padding();
+  }
+
+  @include big-desktop {
+    @include desktop-padding();
+  }
 
   .head {
     hr {
@@ -13,6 +23,10 @@
       font-size: 18px;
       font-weight: 600;
       background-color: $white;
+
+      @include tablet-upwards {
+        margin: -1.75rem 0 0.5rem 1rem;
+      }
     }
   }
 
@@ -27,6 +41,10 @@
       img {
         max-width: 100%;
       }
+    }
+
+    @include tablet-upwards {
+      justify-content: flex-start;
     }
   }
 }

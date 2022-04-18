@@ -1,12 +1,7 @@
 @import "./colors";
+@import "./mixins";
 
 nav {
-  background-image: url("../img/handshake.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-
   .navbar-toggler {
     i {
       color: $white;
@@ -57,13 +52,13 @@ nav {
       .nav-link {
         text-align: center;
         font-size: 16px;
-        font-weight: bolder;
+        font-weight: 600;
         color: $black;
       }
     }
   }
 }
 
-#topheader .navbar-nav li.active > a {
+#banner .navbar-nav li.active > a {
   color: $lighBlue;
 }

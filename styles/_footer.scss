@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./mixins";
 
 #contact {
   margin: 2rem 0 0 0;
@@ -9,6 +10,14 @@
   .head {
     margin: 1rem 0 0 0;
     padding: 0 1rem;
+
+    @include tablet-upwards {
+      margin: 0 3rem;
+    }
+
+    @include big-desktop {
+      padding: 0 4rem;
+    }
 
     hr {
       border-width: 2px;
@@ -22,16 +31,41 @@
       font-size: 18px;
       font-weight: 500;
       background-color: $darkBlue;
+
+      @include tablet-upwards {
+        margin: -1.75rem 0 0.5rem 1rem;
+      }
     }
   }
 
   .tel_container {
     margin: 1rem 0 0 0;
 
+    @include tablet-upwards {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 4rem;
+    }
+
+    @include desktop {
+      justify-content: flex-start;
+    }
+
+    @include big-desktop {
+      padding: 0 3rem;
+    }
+
     .tel {
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include tablet-upwards {
+        align-items: flex-start;
+        font-size: 1rem;
+      }
 
       a {
         text-decoration: none;
@@ -47,6 +81,18 @@
         background-color: $white;
         color: $darkBlue;
         font-weight: 600;
+
+        @include desktop {
+          padding: 0.25rem 2.5rem;
+          font-weight: 500;
+
+          transition: all ease 0.25s;
+
+          &:hover {
+            background-color: $lighBlue;
+            color: $white;
+          }
+        }
       }
 
       p {
@@ -60,12 +106,21 @@
   }
 
   ._copy {
+    @include desktop {
+      margin: 0 0 0 8rem;
+    }
+
     #logo_footer {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: fit-content;
       margin: 0 auto;
+
+      @include tablet-upwards {
+        flex-direction: row;
+        align-items: flex-start;
+      }
 
       img {
         width: 7.5rem;
@@ -79,6 +134,11 @@
         flex-direction: column;
         align-items: center;
 
+        @include tablet-upwards {
+          align-items: flex-start;
+          margin: 0 0 0 0 1rem;
+        }
+
         span {
           font-size: 14px;
           text-transform: uppercase;
@@ -88,6 +148,11 @@
           text-transform: capitalize;
           font-size: 24px;
           color: $lighBlue;
+
+          @include desktop {
+            font-weight: 600;
+            font-size: 1.25rem;
+          }
         }
 
         & :nth-child(2) {
@@ -98,6 +163,15 @@
 
     .copy {
       text-align: center;
+
+      @include tablet-upwards {
+        margin: 1.25rem 0 0 0;
+        text-align: left;
+      }
+
+      @include desktop {
+        font-size: 14px;
+      }
     }
   }
 }

@@ -1,6 +1,15 @@
 @import "./colors";
+@import "./mixins";
 
 #services {
+  @include tablet-upwards {
+    @include tablet-padding();
+  }
+
+  @include big-desktop {
+    @include desktop-padding();
+  }
+
   margin: 3rem 0 0 0;
 
   .head {
@@ -18,6 +27,10 @@
       font-size: 18px;
       font-weight: 600;
       background-color: $white;
+
+      @include tablet-upwards {
+        margin: -1.75rem 0 0.5rem 1rem;
+      }
     }
 
     h4 {
@@ -30,7 +43,26 @@
   .content {
     padding: 0 2rem;
 
+    @include tablet-upwards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    @include desktop {
+      gap: 1rem;
+      padding: 0;
+    }
+
     & > div {
+      @include tablet-upwards {
+        width: 16.25rem;
+        height: 24rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+      }
+
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -44,6 +76,10 @@
         margin: 1rem 0 0.5rem 0;
         width: 50%;
         border-radius: 6px;
+
+        @include tablet-upwards {
+          margin: 0.5rem 0;
+        }
       }
 
       i {
@@ -57,11 +93,20 @@
         margin: 8px 0 10px 0;
         font-size: 18px;
         text-align: center;
+
+        @include tablet-upwards {
+          font-size: 18px;
+        }
       }
 
       p {
         text-align: center;
         color: $textColor;
+
+        @include tablet-upwards {
+          font-size: 14px;
+          text-align: left;
+        }
       }
     }
   }
