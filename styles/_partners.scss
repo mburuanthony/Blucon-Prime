@@ -1,16 +1,6 @@
 @import "./mixins";
 
 #partners {
-  padding: 1rem;
-
-  // @include tablet-upwards {
-  //   @include tablet-padding();
-  // }
-
-  // @include big-desktop {
-  //   @include desktop-padding();
-  // }
-
   .head {
     hr {
       border-width: 2px;

@@ -3,12 +3,7 @@
 
 #about {
   #container {
-    padding: 0 1rem;
-
     .head {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-
       hr {
         border-width: 2px;
       }
@@ -38,6 +33,8 @@
     }
 
     #abt {
+      position: relative;
+
       @include tablet-upwards {
         display: flex;
         flex-direction: row;
@@ -45,8 +42,15 @@
       }
 
       .abt-image {
+        margin: 0 0 10px 0;
         @include tablet-upwards {
           flex: 1;
+        }
+
+        @include phone-only {
+          position: relative;
+          width: 100vw;
+          left: -1rem;
         }
 
         img {
@@ -55,7 +59,6 @@
           object-position: 75%;
           width: 100%;
           height: 100%;
-          margin: 0 0 10px 0;
         }
       }
 

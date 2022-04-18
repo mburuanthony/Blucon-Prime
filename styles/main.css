@@ -3,6 +3,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 8px 0 !important;
+}
+
+nav .navbar-toggler {
+  padding-right: 0 !important;
 }
 
 nav .navbar-toggler i {
@@ -30,7 +35,7 @@ nav #logo_navbar {
 nav #logo_navbar img {
   width: 2.5rem;
   height: 2.5rem;
-  margin: 0 4px 0 0;
+  margin-bottom: 4px;
   padding: 0;
 }
 
@@ -128,8 +133,8 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 #banner .jumbotron {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   margin-top: 8rem;
   background-color: transparent;
   border-radius: 0;
@@ -235,15 +240,6 @@ nav .navbar-nav .nav-item .nav-link {
   }
 }
 
-#about #container {
-  padding: 0 1rem;
-}
-
-#about #container .head {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
 #about #container .head hr {
   border-width: 2px;
 }
@@ -277,6 +273,10 @@ nav .navbar-nav .nav-item .nav-link {
   }
 }
 
+#about #container #abt {
+  position: relative;
+}
+
 @media only screen and (min-width: 768px) {
   #about #container #abt {
     display: -webkit-box;
@@ -290,11 +290,23 @@ nav .navbar-nav .nav-item .nav-link {
   }
 }
 
+#about #container #abt .abt-image {
+  margin: 0 0 10px 0;
+}
+
 @media only screen and (min-width: 768px) {
   #about #container #abt .abt-image {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+}
+
+@media (max-width: 599px) {
+  #about #container #abt .abt-image {
+    position: relative;
+    width: 100vw;
+    left: -1rem;
   }
 }
 
@@ -306,7 +318,6 @@ nav .navbar-nav .nav-item .nav-link {
      object-position: 75%;
   width: 100%;
   height: 100%;
-  margin: 0 0 10px 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -368,7 +379,6 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 .mission {
-  margin: 1rem 0;
   background: #199bf1;
 }
 
@@ -414,14 +424,6 @@ nav .navbar-nav .nav-item .nav-link {
 
 .mission__ > div p {
   color: #ffffff;
-}
-
-#services {
-  margin-top: 3rem;
-}
-
-#services .head {
-  margin-bottom: 2rem;
 }
 
 #services .head hr {
@@ -550,14 +552,6 @@ nav .navbar-nav .nav-item .nav-link {
   }
 }
 
-#team {
-  margin-top: 2rem;
-}
-
-#team .head {
-  margin-top: 1rem;
-}
-
 #team .head hr {
   border-width: 2px;
 }
@@ -659,10 +653,6 @@ nav .navbar-nav .nav-item .nav-link {
   display: none;
 }
 
-#partners {
-  padding: 1rem;
-}
-
 #partners .head hr {
   border-width: 2px;
 }
@@ -713,10 +703,6 @@ nav .navbar-nav .nav-item .nav-link {
 
 #training {
   padding: 0 1rem;
-}
-
-#training .head {
-  margin-bottom: 2rem;
 }
 
 #training .head hr {
@@ -869,14 +855,10 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 #contact {
-  margin: 2rem 0 0 0;
+  margin-bottom: 0;
   padding: 1rem 0;
   background-color: #014a7d;
   color: #ffffff;
-}
-
-#contact .head {
-  margin-top: 1rem;
 }
 
 #contact .head hr {
@@ -1110,6 +1092,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 599px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -1120,5 +1108,25 @@ body {
   margin-right: auto;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+section .head {
+  margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  section .head {
+    margin-bottom: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    margin-bottom: 3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
