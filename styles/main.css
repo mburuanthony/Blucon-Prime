@@ -396,10 +396,10 @@ nav .navbar-nav .nav-item .nav-link {
   }
 }
 
-#about .location img {
+#about .location .location_img {
   display: block;
-  width: 16rem;
-  margin: 0 auto 0 auto;
+  width: 100%;
+  max-width: 450px;
 }
 
 .mission {
