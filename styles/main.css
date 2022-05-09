@@ -33,10 +33,17 @@ nav #logo_navbar {
 }
 
 nav #logo_navbar img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   margin-bottom: 4px;
   padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  nav #logo_navbar img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
 }
 
 nav #logo_navbar p {
@@ -74,8 +81,7 @@ nav #logo_navbar p span {
 }
 
 nav .navbar-nav {
-  background-color: rgba(255, 255, 255, 0.65);
-  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 @media (max-width: 599px) {
@@ -346,62 +352,6 @@ nav .navbar-nav .nav-item .nav-link {
   color: #8c8c8c;
 }
 
-#about .location {
-  margin: 0.5rem 0 1rem 0;
-}
-
-@media only screen and (min-width: 768px) {
-  #about .location .head {
-    margin-bottom: 1.75rem;
-  }
-}
-
-#about .location .head hr {
-  border-width: 2px;
-}
-
-#about .location .head h3 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0 4px;
-  margin: -1.75rem auto 0.5rem auto;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #ffffff;
-}
-
-@media only screen and (min-width: 768px) {
-  #about .location .head h3 {
-    margin: -1.75rem 0 1rem 1rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #about .location {
-    margin: 2rem 0 0 0;
-  }
-}
-
-#about .location p {
-  margin: 0 0 0.5rem 0;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #014a7d;
-}
-
-@media only screen and (min-width: 768px) {
-  #about .location p {
-    font-size: 16px;
-  }
-}
-
-#about .location .location_img {
-  display: block;
-  width: 100%;
-  max-width: 450px;
-}
-
 .mission {
   background: #199bf1;
 }
@@ -420,34 +370,22 @@ nav .navbar-nav .nav-item .nav-link {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 1.25rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-.mission__ hr {
-  background-color: #ffffff;
-}
-
-@media only screen and (min-width: 768px) {
-  .mission__ hr {
-    width: 10rem;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
+.mission__ > div {
+  color: #ffffff;
 }
 
 .mission__ > div h5 {
   font-size: 18px;
-  color: #ffffff;
-}
-
-.mission__ > div p {
-  color: #ffffff;
 }
 
 #services .head hr {
@@ -527,7 +465,7 @@ nav .navbar-nav .nav-item .nav-link {
 @media only screen and (min-width: 768px) {
   #services .content > div {
     width: 16.25rem;
-    height: 24rem;
+    height: 30.5rem;
     margin: 0.5rem;
     padding: 0.5rem;
   }
@@ -536,8 +474,8 @@ nav .navbar-nav .nav-item .nav-link {
 #services .content > div img {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  width: 76px;
-  height: 76px;
+  width: 5rem;
+  height: 5rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px;
@@ -598,7 +536,7 @@ nav .navbar-nav .nav-item .nav-link {
 }
 
 #team .team_wrapper {
-  padding: 4rem 0 1rem 0;
+  padding-right: 0.5rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,6 +722,52 @@ nav .navbar-nav .nav-item .nav-link {
   #training .top p {
     text-align: left;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .location .head {
+    margin-bottom: 1.75rem;
+  }
+}
+
+.location .head hr {
+  border-width: 2px;
+}
+
+.location .head h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 4px;
+  margin: -1.75rem auto 0.5rem auto;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .location .head h3 {
+    margin: -1.75rem 0 1rem 1rem;
+  }
+}
+
+.location p {
+  margin: 0 0 0.5rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #014a7d;
+}
+
+@media only screen and (min-width: 768px) {
+  .location p {
+    font-size: 16px;
+  }
+}
+
+.location .location_img {
+  display: block;
+  width: 100%;
+  max-width: 20rem;
 }
 
 #contact {
