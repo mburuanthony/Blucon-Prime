@@ -34,8 +34,11 @@
   }
 
   .location_img {
-    // display: block;
-    // width: 100%;
-    // max-width: 20rem;
+    display: block;
+    max-width: 22rem;
+
+    @include tablet-upwards {
+      max-width: 30rem;
+    }
   }
 }
