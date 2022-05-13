@@ -764,12 +764,6 @@ nav .navbar-nav .nav-item .nav-link {
   }
 }
 
-.location .location_img {
-  display: block;
-  width: 100%;
-  max-width: 20rem;
-}
-
 #contact {
   margin-bottom: 0;
   padding: 1rem 0;
