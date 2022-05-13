@@ -856,6 +856,16 @@ nav .navbar-nav .nav-item .nav-link {
   }
 }
 
+#contact .tel_container .tel :nth-child(1) {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #contact .tel_container .tel :nth-child(1) {
+    text-align: unset;
+  }
+}
+
 #contact .tel_container .tel a {
   text-decoration: none;
 }
