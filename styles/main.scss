@@ -12,47 +12,49 @@
 @import "./mixins";
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  @include phone-only {
-    font-size: 14px;
-  }
+    position: relative;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
 
-  font-family: "Poppins", sans-serif;
+    @include phone-only {
+        font-size: 14px;
+    }
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .body-container {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
 }
 
 section {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 
-  .head {
-    margin-bottom: 12px;
+    .head {
+        margin-bottom: 12px;
+
+        @include tablet-upwards {
+            margin-bottom: 1.75rem;
+        }
+    }
 
     @include tablet-upwards {
-      margin-bottom: 1.75rem;
+        margin-bottom: 3rem;
     }
-  }
-
-  @include tablet-upwards {
-    margin-bottom: 3rem;
-  }
 }

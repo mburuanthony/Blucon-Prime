@@ -2,121 +2,125 @@
 @import "./mixins";
 
 #banner {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../img/diamond-from-coal.webp");
-  background-size: cover;
-  background-position: 25% center;
-  background-repeat: no-repeat;
-
-  @include tablet-upwards {
-    height: fit-content;
-    background-image: none;
-  }
-
-  #topheader {
-    nav {
-      #logo_navbar {
-        img {
-          @include tablet-upwards {
-            width: 4rem;
-            height: 4rem;
-          }
-        }
-      }
-
-      .navbar-nav {
-        @include tablet-upwards {
-          background-color: $white;
-        }
-
-        .nav-item {
-          .nav-link {
-            @include tablet-upwards {
-              color: $black;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .jumbotron {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-top: 8rem;
-    background-color: transparent;
-    border-radius: 0;
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../img/diamond-from-coal.webp");
+    background-size: cover;
+    background-position: 25% center;
+    background-repeat: no-repeat;
     position: relative;
+    display: grid;
+    place-items: center;
 
-    @include tablet-downwards {
-      height: 50vh;
+    @include tablet-upwards {
+        height: fit-content;
+        background-image: none;
     }
 
-    @include desktop {
-      margin: 0 auto;
-      justify-content: center;
-    }
+    #topheader {
+        nav {
+            #logo_navbar {
+                img {
+                    @include tablet-upwards {
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+            }
 
-    .landing {
-      flex: 1;
-      color: $white;
+            .navbar-nav {
+                @include tablet-upwards {
+                    background-color: $white;
+                }
 
-      @include desktop {
-        margin-left: 4px;
-      }
-
-      .title {
-        font-size: 2.25rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        @include tablet-upwards {
-          color: $black;
+                .nav-item {
+                    .nav-link {
+                        @include tablet-upwards {
+                            color: $black;
+                        }
+                    }
+                }
+            }
         }
-      }
-      .content {
-        font-size: 0.875rem;
-        @include tablet-upwards {
-          color: #8c8c8c;
-        }
-      }
     }
 
-    #hero-image {
-      display: none;
-      flex: 1;
-      position: relative;
-
-      @include tablet-upwards {
-        display: block;
-      }
-
-      &:after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
-      }
-
-      .nb-image {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+    .jumbotron {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        // margin-top: 8rem;
+        background-color: transparent;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        position: relative;
         width: 100%;
-        height: 100%;
-        display: none;
-        object-fit: cover;
-        object-position: bottom center;
 
-        @include tablet-upwards {
-          display: block;
-          border-radius: 50%;
+        @include tablet-downwards {
+            height: 50vh;
         }
-      }
+
+        @include desktop {
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .landing {
+            flex: 1;
+            color: $white;
+
+            @include desktop {
+                margin-left: 4px;
+            }
+
+            .title {
+                font-size: 2.25rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                @include tablet-upwards {
+                    color: $black;
+                }
+            }
+            .content {
+                font-size: 0.875rem;
+                @include tablet-upwards {
+                    color: #8c8c8c;
+                }
+            }
+        }
+
+        #hero-image {
+            display: none;
+            flex: 1;
+            position: relative;
+
+            @include tablet-upwards {
+                display: block;
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                padding-bottom: 100%;
+            }
+
+            .nb-image {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                object-fit: cover;
+                object-position: bottom center;
+
+                @include tablet-upwards {
+                    display: block;
+                    border-radius: 50%;
+                }
+            }
+        }
     }
-  }
 }

@@ -1,84 +1,126 @@
 @import "./colors";
 @import "./mixins";
 
-nav {
-  align-items: center;
-  padding: 8px 0 !important;
-
-  .navbar-toggler {
-    padding-right: 0 !important;
-    i {
-      color: $white;
-    }
-  }
-
-  #logo_navbar {
-    display: flex;
-    line-height: 0;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-
-    img {
-      width: 3rem;
-      height: 3rem;
-      margin-bottom: 4px;
-      padding: 0;
-
-      @include tablet-upwards {
-        width: 3.75rem;
-        height: 3.75rem;
-      }
+nav#navbar {
+    align-items: center;
+    padding: 8px 1rem !important;
+    @include tablet-downwards {
+        padding: 0.5rem !important;
     }
 
-    p {
-      all: unset;
-      width: fit-content;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 4px;
+    .navbar-toggler {
+        padding-right: 0 !important;
+        i {
+            color: $white;
+        }
+    }
 
-      .blucon {
-        text-transform: capitalize;
-        font-size: 20px;
-        font-weight: bold;
-        color: $lighBlue;
-      }
-
-      & :nth-child(2) {
-        color: $darkBlue;
-        text-transform: uppercase;
-        font-size: 10px;
-      }
-
-      span {
-        line-height: 1;
+    #logo_navbar {
+        display: flex;
+        line-height: 0;
         margin: 0;
         padding: 0;
-      }
-    }
-  }
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
 
-  .navbar-nav {
-    background-color: rgba(255, 255, 255, 0.85);
-    @include phone-only {
-      margin-top: 8px;
+        img {
+            width: 3rem;
+            height: 3rem;
+            margin-bottom: 4px;
+            padding: 0;
+
+            @include tablet-upwards {
+                width: 3.75rem;
+                height: 3.75rem;
+            }
+        }
+
+        p {
+            all: unset;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4px;
+
+            .blucon {
+                text-transform: capitalize;
+                font-size: 20px;
+                font-weight: bold;
+                color: $lighBlue;
+            }
+
+            & :nth-child(2) {
+                color: #003459;
+                text-transform: uppercase;
+                font-size: 10px;
+            }
+
+            span {
+                line-height: 1;
+                margin: 0;
+                padding: 0;
+            }
+        }
     }
 
-    .nav-item {
-      .nav-link {
-        text-align: center;
-        font-size: 14px;
-        font-weight: 600;
-        color: $black;
-      }
+    .navbar-nav {
+        background-color: rgba(255, 255, 255, 0.85);
+        @include phone-only {
+            margin-top: 8px;
+        }
+
+        .nav-item {
+            .nav-link {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 600;
+                color: $black;
+            }
+
+            // active link color
+            &.active > .nav-link {
+                color: $lighBlue;
+            }
+        }
     }
-  }
 }
 
-// active link color
-#banner .navbar-nav li.active > a {
-  color: $lighBlue;
+#header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    width: 100%;
+    transition: visibility 0.2s ease;
+    visibility: visible;
+
+    &.hidden {
+        visibility: hidden;
+        display: none;
+    }
+
+    &.show-bg {
+        background-color: white !important;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+
+        #navbar .navbar-toggler i {
+            color: black;
+        }
+    }
+}
+
+#navbar {
+    transition: visibility 0.2s ease;
+    visibility: visible;
+
+    &.hidden {
+        visibility: hidden;
+    }
+
+    &.hide-bg {
+        background: none;
+        box-shadow: none;
+    }
 }
