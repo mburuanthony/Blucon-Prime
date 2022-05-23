@@ -56,12 +56,12 @@ function toggleActive() {
             );
             ev.target.parentElement.classList.add("active"); // li element
             // hide the navigation menu when one clicks a link
-            if (navMenu.classList.contains("shown")) {
-                if (window.matchMedia("(max-width: 768px)")) {
-                    navMenu.classList.remove("shown");
-                    header.classList.add("hidden");
-                }
-            }
+            // if (navMenu.classList.contains("shown")) {
+            //     if (window.matchMedia("(max-width: 768px)")) {
+            //         navMenu.classList.remove("shown");
+            //         header.classList.add("hidden");
+            //     }
+            // }
         });
     });
 }
